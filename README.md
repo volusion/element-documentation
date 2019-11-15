@@ -13,7 +13,7 @@ Empty for now
 
 ## How-to guides
 
-Empty for now
+* [How to Set Up your Environment for Developing Blocks](how-to/env-setup/README.md)
 
 
 ## Reference
