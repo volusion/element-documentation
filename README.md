@@ -10,10 +10,10 @@ Empty for now
 
 Empty for now
 
-
 ## How-to guides
 
 * [How to Set Up your Environment for Developing Blocks](how-to/env-setup/README.md)
+* [Add Element Proptypes to a Block](how-to/proptypes/README.md)
 
 
 ## Reference
