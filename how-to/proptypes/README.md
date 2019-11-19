@@ -19,7 +19,7 @@ export const defaultConfig = {
     text: 'Element Starter Block'
 };
 ```
-Working with Element Proptypes
+
 ## 2. Add a New Element Proptype
 
 Add another proptype to the schema. You need to provide a label property and a type. For this example we'll add a `color` prop, but look at the [Proptypes Reference](https://github.com/volusion/element-proptypes) for other available types.
