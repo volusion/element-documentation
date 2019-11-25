@@ -29,28 +29,29 @@ window.ElementSdk.client.categories.get()
 
 ### Table of Contents
 
-* [bag](#bag)
-* [cart](#cart)
-* [Categories](#Categories)
+* [Bag](#bag)
+* [Cart](#cart)
+* [Categories](#categories)
   * [`categories.get()`](#categoriesget)
-* [checkConfiguredOrFail](#checkConfiguredOrFail)
-* [configure](#configure)
-* [contentPages](#contentPages)
-* [menus](#menus)
-* [payPal](#payPal)
+* [Config](#config)
+  * [`configure()`](#configure)
+  * [`checkConfiguredOrFail()`](#checkconfiguredorfail)
+* [Content Pages](#content-pages)
+* [Menus](#menus)
+* [PayPal](#paypal)
 * [Products](#products)
   * [`products.getById()`](#productsgetbyid)
   * [`products.getBySlug()`](#productsgetbyslug)
-* [request](#request)
-* [setStoreInfo](#setStoreInfo)
+* [Request](#request)
 * [Store Information](#store-information)
+  * [`setStoreInfo()`](#setstoreinfo)
   * [`storeInfo()`](#storeinfo)
   * [`storeInformation`](#storeinformation)
-* [tenant](#tenant)
+* [Tenant](#tenant)
 
-### `bag`
+### Bag
 
-### `cart`
+### Cart
 
 ### Categories
 
@@ -108,15 +109,17 @@ utils.client.categories.get()
 ]
 ```
 
-### `checkConfiguredOrFail`
+### Config
 
-### `configure`
+#### `configure()`
 
-### `contentPages`
+#### `checkConfiguredOrFail()`
 
-### `menus`
+### Content Pages
 
-### `payPal`
+### Menus
+
+### PayPal
 
 ### Products
 
@@ -198,11 +201,11 @@ utils.client.products.getBySlug('product-name')
 }
 ```
 
-### `request`
-
-### `setStoreInfo`
+### Request
 
 ### Store Information
+
+#### `setStoreInfo()`
 
 #### `storeInfo()`
 
@@ -252,7 +255,7 @@ utils.client.storeInformation
 }
 ```
 
-### `tenant`
+### Tenant
 
 A property with a string value containing the configured store's tenant ID.
 
