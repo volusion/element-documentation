@@ -25,32 +25,142 @@ window.ElementSdk.client.categories.get()
     .catch(console.error);
 ```
 
-## Methods and Properties
+## `ElementSdk.client` Methods and Properties
 
-### `client.bag()`
+### `bag`
 
-### `client.cart()`
+### `cart`
 
-### `client.categories()`
+### `categories`
 
-### `client.checkConfiguredOrFail()`
+A method that returns a Promise that resolves with an array of the configured store's categories.
 
-### `client.configure()`
+#### Usage
 
-### `client.contentPages()`
+```js
+utils.client.categories.get()
+```
 
-### `client.menus()`
+#### Response
 
-### `client.payPal()`
+```js
+[
+    {
+        "contentPageId": "",
+        "descriptions": {
+            "short": "",
+            "long": "",
+            "extended": ""
+        },
+        "id": "123",
+        "images": [],
+        "name": "Category 1",
+        "productCount": 5,
+        "seo": {
+            "title": "",
+            "metaDescription": "",
+            "friendlyName": ""
+        },
+        "state": "Active",
+        "subCategories": []
+    }, {
+        "contentPageId": "",
+        "descriptions": {
+            "short": "",
+            "long": "",
+            "extended": ""
+        },
+        "id": "456",
+        "images": [],
+        "name": "Category 2",
+        "productCount": 3,
+        "seo": {
+            "title": "",
+            "metaDescription": "",
+            "friendlyName": ""
+        },
+        "state": "Active",
+        "subCategories": []
+    }
+]
+```
 
-### `client.products()`
+### `checkConfiguredOrFail`
 
-### `client.request()`
+### `configure`
 
-### `client.setStoreInfo()`
+### `contentPages`
 
-### `client.storeInfo()`
+### `menus`
 
-### `client.storeInformation`
+### `payPal`
 
-### `client.tenant`
+### `products`
+
+### `request`
+
+### `setStoreInfo`
+
+### `storeInfo`
+
+### `storeInformation`
+
+A property with an object value containing details about the configured store.
+
+#### Usage
+
+```js
+utils.client.storeInformation
+```
+
+#### Response
+
+```js
+{
+    "acceptsStripeAsPayment": false,
+    "launched": false,
+    "name": "Test Store",
+    "seo": {
+        "metaDescription": "",
+        "metaTitle": "",
+        "platformMetaTags": {
+            "google": ""
+        }
+    },
+    "socialNetworks": {
+        "instagram": ""
+    },
+    "storeUrl": "",
+    "tenant": "",
+    "thirdPartyIntegrations": {
+        "addThisEnabled": false
+    },
+    "applePay": {
+        "isEnabled": false
+    },
+    "paypal": {
+        "isEnabled": false,
+        "primaryEmailConfirmed": false
+    },
+    "logo": {
+        "imagePath": "",
+        "uriBase": ""
+    }
+}
+```
+
+### `tenant`
+
+A property with a string value containing the configured store's tenant ID.
+
+#### Usage
+
+```js
+utils.client.tenant
+```
+
+#### Response
+
+```js
+"58533e0d3b77c800172ca14e"
+```
