@@ -32,19 +32,20 @@ window.ElementSdk.client.categories.get()
 * [bag](#bag)
 * [cart](#cart)
 * [Categories](#Categories)
-  * `get()`
+  * [`categories.get()`](#categoriesget)
 * [checkConfiguredOrFail](#checkConfiguredOrFail)
 * [configure](#configure)
 * [contentPages](#contentPages)
 * [menus](#menus)
 * [payPal](#payPal)
-* [Products](#Products)
-  * [`products.getById()`](#products.getById())
+* [Products](#products)
+  * [`products.getById()`](#productsgetbyid)
+  * [`products.getBySlug()`](#productsgetbyslug)
 * [request](#request)
 * [setStoreInfo](#setStoreInfo)
-* [Store Information](#Store)
-  * `storeInfo()`
-  * `storeInformation`
+* [Store Information](#store-information)
+  * [`storeInfo()`](#storeinfo)
+  * [`storeInformation`](#storeinformation)
 * [tenant](#tenant)
 
 ### `bag`
@@ -126,7 +127,46 @@ A method that returns a Promise that resolves with the data for the given produc
 #### Usage
 
 ```js
-utils.client.products.getById()
+utils.client.products.getById('123')
+```
+
+#### Response
+
+```js
+{
+    "availability": {},
+    "categoryIds": [],
+    "id": "",
+    "images": [],
+    "listPrice": 1,
+    "name": "",
+    "price": 1,
+    "productVariants": [{
+        "id": "",
+        "images": [],
+        "isInventoryTracked": false,
+        "price": 1,
+        "quantity": 0,
+        "sku": "",
+        "variants": []
+    }],
+    "relatedProductIds": [],
+    "seo_friendlyName": "",
+    "seo_metaDescription": "",
+    "seo_title": "",
+    "sku": "",
+    "variantOptions": []
+}
+```
+
+#### `products.getBySlug()`
+
+A method that returns a Promise that resolves with the data for the given product SEO Friendly Name (slug).
+
+#### Usage
+
+```js
+utils.client.products.getBySlug('product-name')
 ```
 
 #### Response
