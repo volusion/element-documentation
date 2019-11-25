@@ -27,6 +27,23 @@ window.ElementSdk.client.categories.get()
 
 ## `ElementSdk.client` Methods and Properties
 
+### Table of Contents
+
+- [bag](#bag)
+- [cart](#cart)
+- [categories](#categories)
+- [checkConfiguredOrFail](#checkConfiguredOrFail)
+- [configure](#configure)
+- [contentPages](#contentPages)
+- [menus](#menus)
+- [payPal](#payPal)
+- [products](#products)
+- [request](#request)
+- [setStoreInfo](#setStoreInfo)
+- [storeInfo](#storeInfo)
+- [storeInformation](#storeInformation)
+- [tenant](#tenant)
+
 ### `bag`
 
 ### `cart`
