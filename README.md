@@ -18,6 +18,6 @@ Empty for now
 * [How to Add Blocks across All Your Site Pages Using Templates](how-to/add-blocks-to-templates/README.md)
 * [How to Add a Page to a Theme](how-to/add-page-to-theme/README.md)
 
-## Reference
+## References
 
-Empty for now
+* [Visual Guide to Proptypes](references/proptypes/README.md)
