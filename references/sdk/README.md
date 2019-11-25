@@ -1,4 +1,4 @@
-# ElementSdk Client Reference
+# Volusion API ElementSdk Client Reference
 
 This document looks at the ways that you can use `window.ElementSdk.client` to call the Volusion API.
 
@@ -15,7 +15,7 @@ export const getDataProps = (utils, { productSlug }) => {
 };
 ```
 
-See [How to Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md) for more details.
+See [How to Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md) for more background behind that example.
 
 **Tip**: To explore the SDK without even building a block you can navigate to Site Designer or a page built on Element in your browser, and access the methods directly from your javascript console like this:
 
@@ -25,30 +25,32 @@ window.ElementSdk.client.categories.get()
     .catch(console.error);
 ```
 
-## `client.bag`
+## Methods and Properties
 
-## `client.cart`
+### `client.bag()`
 
-## `client.categories`
+### `client.cart()`
 
-## `client.checkConfiguredOrFail`
+### `client.categories()`
 
-## `client.configure`
+### `client.checkConfiguredOrFail()`
 
-## `client.contentPages`
+### `client.configure()`
 
-## `client.menus`
+### `client.contentPages()`
 
-## `client.payPal`
+### `client.menus()`
 
-## `client.products`
+### `client.payPal()`
 
-## `client.request`
+### `client.products()`
 
-## `client.setStoreInfo`
+### `client.request()`
 
-## `client.storeInfo`
+### `client.setStoreInfo()`
 
-## `client.storeInformation`
+### `client.storeInfo()`
 
-## `client.tenant`
+### `client.storeInformation`
+
+### `client.tenant`
