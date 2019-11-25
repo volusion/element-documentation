@@ -16,6 +16,7 @@ Empty for now
 * [How to Add Element Proptypes to a Block](how-to/proptypes/README.md)
 * [How to Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
 * [How to Add Blocks across All Your Site Pages Using Templates](how-to/add-blocks-to-templates/README.md)
+* [How to Add a Page to a Theme](how-to/add-page-to-theme/README.md)
 
 ## Reference
 

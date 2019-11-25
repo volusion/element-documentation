@@ -2,7 +2,7 @@
 
 ## 1. Open Your Theme in Site Designer
 
-Navigate to Site Designer and click the **edit** (or **continue editing**) button to open your theme.
+Navigate to Site Designer. If you are not already editing your live theme, click the **edit** (or **continue editing**) button to open your theme.
 
 ## 2. Select the Master Template for Editing
 
