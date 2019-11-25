@@ -29,26 +29,31 @@ window.ElementSdk.client.categories.get()
 
 ### Table of Contents
 
-- [bag](#bag)
-- [cart](#cart)
-- [categories](#categories)
-- [checkConfiguredOrFail](#checkConfiguredOrFail)
-- [configure](#configure)
-- [contentPages](#contentPages)
-- [menus](#menus)
-- [payPal](#payPal)
-- [products](#products)
-- [request](#request)
-- [setStoreInfo](#setStoreInfo)
-- [storeInfo](#storeInfo)
-- [storeInformation](#storeInformation)
-- [tenant](#tenant)
+* [bag](#bag)
+* [cart](#cart)
+* [Categories](#Categories)
+  * `get()`
+* [checkConfiguredOrFail](#checkConfiguredOrFail)
+* [configure](#configure)
+* [contentPages](#contentPages)
+* [menus](#menus)
+* [payPal](#payPal)
+* [Products](#Products)
+  * [`products.getById()`](#products.getById())
+* [request](#request)
+* [setStoreInfo](#setStoreInfo)
+* [Store Information](#Store)
+  * `storeInfo()`
+  * `storeInformation`
+* [tenant](#tenant)
 
 ### `bag`
 
 ### `cart`
 
-### `categories`
+### Categories
+
+#### `categories.get()`
 
 A method that returns a Promise that resolves with an array of the configured store's categories.
 
@@ -112,15 +117,56 @@ utils.client.categories.get()
 
 ### `payPal`
 
-### `products`
+### Products
+
+#### `products.getById()`
+
+A method that returns a Promise that resolves with the data for the given product ID.
+
+#### Usage
+
+```js
+utils.client.products.getById()
+```
+
+#### Response
+
+```js
+{
+    "availability": {},
+    "categoryIds": [],
+    "id": "",
+    "images": [],
+    "listPrice": 1,
+    "name": "",
+    "price": 1,
+    "productVariants": [{
+        "id": "",
+        "images": [],
+        "isInventoryTracked": false,
+        "price": 1,
+        "quantity": 0,
+        "sku": "",
+        "variants": []
+    }],
+    "relatedProductIds": [],
+    "seo_friendlyName": "",
+    "seo_metaDescription": "",
+    "seo_title": "",
+    "sku": "",
+    "variantOptions": []
+}
+```
 
 ### `request`
 
 ### `setStoreInfo`
 
-### `storeInfo`
+### Store Information
 
-### `storeInformation`
+#### `storeInfo()`
+
+#### `storeInformation`
 
 A property with an object value containing details about the configured store.
 
