@@ -1,8 +1,10 @@
 # Element Platform documentation
 
-## Explanation
-
 Empty for now
+
+## Explanations
+
+* [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
 
 ## Tutorials
 
