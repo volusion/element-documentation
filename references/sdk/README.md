@@ -42,12 +42,17 @@ window.ElementSdk.client.categories.get()
 * [Products](#products)
   * [`products.getById()`](#productsgetbyid)
   * [`products.getBySlug()`](#productsgetbyslug)
+  * [`products.getRelatedById()`](#getrelatedbyid)
+  * [`products.getRelatedBySlug()`](#getrelatedbyslug)
+  * [`products.getByCategoryId()`](#getbycategoryid)
+  * [`products.getWithChildCategories()`](#getwithchildcategories)
 * [Request](#request)
 * [Store Information](#store-information)
   * [`setStoreInfo()`](#setstoreinfo)
   * [`storeInfo()`](#storeinfo)
   * [`storeInformation`](#storeinformation)
-* [Tenant](#tenant)
+* [Tenant ID](#tenant-id)
+  * [`tenant`](#tenant)
 
 ### Bag
 
@@ -130,7 +135,7 @@ A method that returns a Promise that resolves with the data for the given produc
 #### Usage
 
 ```js
-utils.client.products.getById('123')
+utils.client.products.getById('product123')
 ```
 
 #### Response
@@ -201,6 +206,198 @@ utils.client.products.getBySlug('product-name')
 }
 ```
 
+#### `products.getRelatedById()`
+
+A method that returns a Promise that resolves with an array of related products for the given product ID.
+
+#### Usage
+
+```js
+utils.client.products.getRelatedById('product123')
+```
+
+#### Response
+
+```js
+[
+    {
+        "id": "",
+        "images": [],
+        "listPrice": 1,
+        "name": "",
+        "productVariants": [{
+            "id": "",
+            "isInventoryTracked": false,
+            "price": 1,
+            "quantity": 0
+        }],
+        "salePrice": null,
+        "seo_friendlyName": ""
+    }, {
+        "id": "",
+        "images": [],
+        "listPrice": 1,
+        "name": "",
+        "productVariants": [{
+            "id": "",
+            "isInventoryTracked": false,
+            "price": 1,
+            "quantity": 0
+        }],
+        "salePrice": null,
+        "seo_friendlyName": ""
+    }
+]
+```
+
+#### `products.getRelatedBySlug()`
+
+A method that returns a Promise that resolves with an array of related products for the given product SEO Friendly Name (slug).
+
+#### Usage
+
+```js
+utils.client.products.getRelatedBySlug('product-name')
+```
+
+#### Response
+
+```js
+[
+    {
+        "id": "",
+        "images": [],
+        "listPrice": 1,
+        "name": "",
+        "productVariants": [{
+            "id": "",
+            "isInventoryTracked": false,
+            "price": 1,
+            "quantity": 0
+        }],
+        "salePrice": null,
+        "seo_friendlyName": ""
+    }, {
+        "id": "",
+        "images": [],
+        "listPrice": 1,
+        "name": "",
+        "productVariants": [{
+            "id": "",
+            "isInventoryTracked": false,
+            "price": 1,
+            "quantity": 0
+        }],
+        "salePrice": null,
+        "seo_friendlyName": ""
+    }
+]
+```
+
+#### `products.getByCategoryId()`
+
+A method that returns a Promise that resolves with an array of related products for the given category ID.
+
+#### Usage
+
+```js
+utils.client.products.getByCategoryId({ categoryId: 'category123' })
+```
+
+#### Advanced Usage
+
+```js
+utils.client.products.getByCategoryId({
+    categoryId: 'category123',
+    page: 1, // one based
+    pageSize: 20,
+    sort: 'name a-z' // See Product Sort Options at the bottom of this document.
+})
+```
+
+#### Response
+
+```js
+[
+     {
+        "availability": {
+            "preOrder": {
+                "enabled": false
+            }
+        },
+        "categoryIds": ["category123"],
+        "description": "",
+        "id": "",
+        "images": [],
+        "listPrice": 1,
+        "name": "",
+        "price": 1,
+        "productVariants": [{
+            "id": "",
+            "images": [],
+            "isInventoryTracked": false,
+            "price": 1,
+            "quantity": 0,
+            "sku": "",
+            "variants": []
+        }],
+        "relatedProductIds": [],
+        "seo_friendlyName": "",
+        "seo_metaDescription": "",
+        "seo_title": "",
+        "sku": "",
+        "variantOptions": []
+    }, {
+        "availability": {
+            "preOrder": {
+                "enabled": false
+            }
+        },
+        "categoryIds": ["category123"],
+        "description": "",
+        "id": "",
+        "images": [],
+        "listPrice": 1,
+        "name": "",
+        "price": 1,
+        "productVariants": [{
+            "id": "",
+            "images": [],
+            "isInventoryTracked": false,
+            "price": 1,
+            "quantity": 0,
+            "sku": "",
+            "variants": []
+        }],
+        "relatedProductIds": [],
+        "seo_friendlyName": "",
+        "seo_metaDescription": "",
+        "seo_title": "",
+        "sku": "",
+        "variantOptions": []
+    }
+]
+```
+
+#### `products.getWithChildCategories()`
+
+A synchronous method that returns an array with the given category and any subcategories it might have, if passed a category ID and the store's entire category tree (the response from [`categories.get()`](#categoriesget)).
+
+#### Usage
+
+```js
+utils.client.products.getWithChildCategories('category123', categoryTree)
+```
+
+#### Response
+
+```js
+[
+    'category123',
+    'category123-subcategory'
+]
+```
+
 ### Request
 
 ### Store Information
@@ -255,7 +452,9 @@ utils.client.storeInformation
 }
 ```
 
-### Tenant
+### Tenant ID
+
+#### `tenant`
 
 A property with a string value containing the configured store's tenant ID.
 
@@ -270,3 +469,13 @@ utils.client.tenant
 ```js
 "58533e0d3b77c800172ca14e"
 ```
+
+## Additional Notes
+
+### Product Sort Options
+
+* `"lowest price"`
+* `"highest price"`
+* `"newest"`
+* `"name z-a"`
+* `"name a-z"`
