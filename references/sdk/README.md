@@ -35,9 +35,10 @@ window.ElementSdk.client.categories.get()
   * [`categories.get()`](#categoriesget)
 * [Config](#config)
   * [`configure()`](#configure)
-  * [`checkConfiguredOrFail()`](#checkconfiguredorfail)
 * [Content Pages](#content-pages)
+  * [`contentPages.getBySeoFriendlyName()`](#contentPagesgetbyseofriendlyname)
 * [Menus](#menus)
+  * [`menus.get()`](#menusget)
 * [PayPal](#paypal)
 * [Products](#products)
   * [`products.getById()`](#productsgetbyid)
@@ -118,11 +119,74 @@ utils.client.categories.get()
 
 #### `configure()`
 
-#### `checkConfiguredOrFail()`
-
 ### Content Pages
 
+Older stores have pages outside of Element. Manage them from [Volusion Admin Pages](https://admin.volusion.com/pages/list).
+
+#### `contentPages.getBySeoFriendlyName()`
+
+A method that returns a Promise that resolves with the data for the given Content Page SEO Friendly Name (slug).
+
+#### Usage
+
+```js
+utils.client.contentPages.getBySeoFriendlyName('page-name')
+```
+
+#### Response
+
+```js
+{
+    "content": "<p>HTML Page</p>",
+    "createdOn": "", // iso date string
+    "id": "",
+    "name": "Page Name",
+    "seo": {
+        "friendlyName": "page-name",
+        "metaDescription": "",
+        "modifier": 0,
+        "title": ""
+    },
+    "updatedOn": "" // iso date string
+}
+```
+
 ### Menus
+
+#### `menus.get()`
+
+A method that returns a Promise that resolves with an object with an `items` property that contains array of the configured store's menus. **Note:** the Volusion Admin interface only supports a single menu.
+
+#### Usage
+
+```js
+utils.client.menus.get()
+```
+
+#### Response
+
+```js
+{
+    "items": [{
+        "createdOn": "",  // iso date string
+        "id": "",
+        "items": [{
+            "id": "",
+            "items": [],
+            "name": "",
+            "slug": "",
+            "type": "" // types include 'category', 'product', 'page', 'elementPage', and 'link'
+        }, {
+            "id": "",
+            "items": [],
+            "name": "",
+            "slug": "",
+            "type": ""
+        }],
+        "updatedOn": "" // iso date string
+    }]
+}
+```
 
 ### PayPal
 
@@ -130,7 +194,7 @@ utils.client.categories.get()
 
 #### `products.getById()`
 
-A method that returns a Promise that resolves with the data for the given product ID.
+A method that returns a Promise that resolves with the data for the given Product ID.
 
 #### Usage
 
@@ -169,7 +233,7 @@ utils.client.products.getById('product123')
 
 #### `products.getBySlug()`
 
-A method that returns a Promise that resolves with the data for the given product SEO Friendly Name (slug).
+A method that returns a Promise that resolves with the data for the given Product SEO Friendly Name (slug).
 
 #### Usage
 
@@ -208,7 +272,7 @@ utils.client.products.getBySlug('product-name')
 
 #### `products.getRelatedById()`
 
-A method that returns a Promise that resolves with an array of related products for the given product ID.
+A method that returns a Promise that resolves with an array of related products for the given Product ID.
 
 #### Usage
 
@@ -252,7 +316,7 @@ utils.client.products.getRelatedById('product123')
 
 #### `products.getRelatedBySlug()`
 
-A method that returns a Promise that resolves with an array of related products for the given product SEO Friendly Name (slug).
+A method that returns a Promise that resolves with an array of related products for the given Product SEO Friendly Name (slug).
 
 #### Usage
 
