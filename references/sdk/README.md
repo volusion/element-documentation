@@ -47,10 +47,8 @@ window.ElementSdk.client.categories.get()
   * [`products.getRelatedBySlug()`](#getrelatedbyslug)
   * [`products.getByCategoryId()`](#getbycategoryid)
   * [`products.getWithChildCategories()`](#getwithchildcategories)
-* [Request](#request)
 * [Store Information](#store-information)
-  * [`setStoreInfo()`](#setstoreinfo)
-  * [`storeInfo()`](#storeinfo)
+  * [`storeInfo.get()` & `setStoreInfo()`](#storeinfoget-&-setstoreinfo)
   * [`storeInformation`](#storeinformation)
 * [Tenant ID](#tenant-id)
   * [`tenant`](#tenant)
@@ -119,6 +117,18 @@ utils.client.categories.get()
 
 #### `configure()`
 
+A method that configures the client with the tenantId for the store you wish to work with. Requests following this method call will query the given store.
+
+#### Usage
+
+```js
+window.ElementSdk.client.configure({
+    tenant: 'tenantId'
+});
+```
+
+**Note:** when working with blocks this method will already have been called.
+
 ### Content Pages
 
 Older stores have pages outside of Element. Manage them from [Volusion Admin Pages](https://admin.volusion.com/pages/list).
@@ -155,7 +165,7 @@ utils.client.contentPages.getBySeoFriendlyName('page-name')
 
 #### `menus.get()`
 
-A method that returns a Promise that resolves with an object with an `items` property that contains array of the configured store's menus. **Note:** the Volusion Admin interface only supports a single menu.
+A method that returns a Promise that resolves with an object with an `items` property that contains array of the configured store's menus. **Note:** the Volusion Admin interface only supports a single menu at this time.
 
 #### Usage
 
@@ -462,13 +472,23 @@ utils.client.products.getWithChildCategories('category123', categoryTree)
 ]
 ```
 
-### Request
-
 ### Store Information
 
-#### `setStoreInfo()`
+#### `storeInfo.get()` & `setStoreInfo()`
 
-#### `storeInfo()`
+A method that returns a Promise that resolves with the data for the configured store's tenant, and a method to set that data on the `storeInformation` property.
+
+#### Usage
+
+```js
+utils.client.storeInfo
+    .get()
+    .then(data => {
+        utils.client.setStoreInfo(data);
+    });
+```
+
+**Note:** In most cases getting and setting Store Information will have already been done, and you can read the data from the `storeInformation` property below.
 
 #### `storeInformation`
 
