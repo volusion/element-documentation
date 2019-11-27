@@ -25,7 +25,7 @@ As the full markup of the site is generated on the server, search engines will g
 ### Developer friendliness
 
 We give you the full power of Javascript and React. No need to learn a custom programming language or an antiquated templating system. Additionally, we
-handle for you hosting, caching and CDN delivery so you can focus on building your sites.
+handle for hosting, caching, and CDN delivery for you, so you can focus on building your sites.
 
 ## High Level Architecture
 
@@ -37,4 +37,3 @@ interactivity elements to your site. You can communicate between the page's Bloc
 ## Further Reading
 
 To learn more about Element, read the [Concepts](../explanation/element-concepts) explanation.
-
