@@ -30,7 +30,18 @@ window.ElementSdk.client.categories.get()
 ### Table of Contents
 
 * [Bag](#bag)
+  * [`bag.create()`](#bagcreate)
 * [Cart](#cart)
+  * [`cart.get()`](#cartget)
+  * [`cart.getForShopper()`](#cartgetforshopper)
+  * [`cart.update()`](#cartupdate)
+  * [`cart.addContactAndShipping()`](#cartaddcontactandshipping)
+  * [`cart.add()`](#cartadd)
+  * [`cart.setShopperId()`](#cartsetshopperid)
+  * [`cart.getTotalItems()`](#cartgettotalitems)
+  * [`cart.addDiscount()`](#cartadddiscount)
+  * [`cart.removeDiscount()`](#cartremovediscount)
+  * [`cart.getShipToCountries()`](#cartgetshiptocountries)
 * [Categories](#categories)
   * [`categories.get()`](#categoriesget)
 * [Config](#config)
@@ -55,7 +66,301 @@ window.ElementSdk.client.categories.get()
 
 ### Bag
 
+#### `bag.create()`
+
+A method that returns a Promise that resolves with a bag, given a Cart ID, and a returnURI. A Bag ID is used to start the checkout process.
+
+#### Usage
+
+```js
+utils.client.bag.create(cartId, returnUri)
+```
+
+#### Response
+
+```js
+{
+    id: "";
+    tenantId: "";
+    cartId: "";
+    returnUri: "";
+}
+```
+
 ### Cart
+
+**Note:** for instead of using the SDK to interact directly with the cart, read [How To Interact with the Cart](how-to/interact-with-the-cart/README.md) using pub/sub events.
+
+#### `cart.get()`
+
+Get the cart.
+
+Method returns a Promise that resolves with a cart, given a Cart ID.
+
+#### Usage
+
+```js
+utils.client.cart.get(cartId)
+```
+
+#### Cart Response
+
+```js
+{
+    availableShippingMethods: [
+        deliveryEstimate: "",
+        id: "",
+        name: "",
+        shippingPrice: 1,
+        shippingPriceInCents: 1
+    ],
+    billingAddress: {},
+    contactInfo: {
+        email: "",
+    };
+    discounts: {
+        discount: {
+            id: "",
+            name: "",
+            requiresCouponCode: false
+        },
+        discountAmount: number;
+    },
+    grandTotal: 1,
+    id: "",
+    items: [],
+    messages: [],
+    shippingAddress: [],
+    shippingMethod: {
+        id: "",
+        name: "",
+        shippingBand: {
+            shippingPrice: 1
+        },
+        shippingCost: 1
+    },
+    taxAmount: 1,
+    taxRate: 1,
+    total: 1,
+    totalItems: 1,
+    revision: 1
+}
+```
+
+#### `cart.getForShopper()`
+
+Get the cart associated with a shopper.
+
+Method returns a Promise that resolves with a cart associated with a shopper, given a Cart ID, Shopper ID, and Shopper Token. If Shopper ID and Token are not defined, a copy of the cart is still returned.
+
+#### Usage
+
+```js
+utils.client.cart.getForShopper(
+    cartId,
+    shopperId,
+    shopperToken
+)
+```
+
+#### Response
+
+See [Cart Response](#cartresponse)
+
+#### `cart.update()`
+
+Update the quantity of a product in the cart.
+
+Method returns a Promise that resolves with a cart, given a Cart ID, the new quantity you are setting, and the ID of the variant you are updating.
+
+#### Usage
+
+```js
+utils.client.cart.update(
+    cartId,
+    newQuantity,
+    variantId
+)
+```
+
+#### Response
+
+See [Cart Response](#cartresponse)
+
+#### `cart.addContactAndShipping()`
+
+Add contact information, and optionally add the selected shipping method, to the cart.
+
+Method returns a Promise that resolves with a cart, given a Cart ID, contact information, and optionally a shipping method.
+
+#### Usage
+
+```js
+address = {
+    address1: "",
+    address2: "",
+    city: "",
+    state: "",
+    postalCode: "",
+    country: "",
+    firstName: "",
+    lastName: ""
+}
+
+contactInfo = {
+    email: "",
+    shippingAddress: address,
+    billingAddress: address,
+    shippingName: "",
+    billingName: ""
+}
+
+shippingMethod = {
+    id: "", // optional
+    name: "",
+    shippingBand: {
+        shippingPrice: 1
+    };
+    shippingCost: 1 // optional
+}
+
+utils.client.cart.addContactAndShipping(
+    cartId,
+    contactInfo,
+    shippingMethod // optional
+)
+```
+
+#### Response
+
+See [Cart Response](#cartresponse)
+
+#### `cart.add()`
+
+Add a product to the cart.
+
+Method returns a Promise that resolves with a cart, given a Cart ID, Product ID, Product Quantity, and Variant ID
+
+#### Usage
+
+```js
+utils.client.cart.add(
+    cartId,
+    productId,
+    quantity,
+    variantId
+)
+```
+
+#### Response
+
+See [Cart Response](#cartresponse)
+
+#### `cart.setShopperId()`
+
+Associates a shopper with a cart.
+
+Method returns a Promise that returns void, given a Cart ID and a Shopper ID.
+
+#### Usage
+
+```js
+utils.client.cart.setShopperId(
+    cartId,
+    shopperId
+)
+```
+
+#### Response
+
+No response.
+
+#### `cart.getTotalItems()`
+
+Get the number of items in the cart.
+
+Method returns a Promise that resolves with an object that includes total number of items in the cart, given a Cart ID.
+
+#### Usage
+
+```js
+utils.client.cart.getTotalItems(
+    cartId
+)
+```
+
+#### Response
+
+```js
+{
+    totalItems: 1
+}
+```
+
+#### `cart.addDiscount()`
+
+Add a discount code to the cart.
+
+Method returns a Promise that resolves with a cart, given a Cart ID and Discount Code.
+
+#### Usage
+
+```js
+utils.client.cart.addDiscount(
+    cartId,
+    discountCode
+)
+```
+
+#### Response
+
+See [Cart Response](#cartresponse)
+
+#### `cart.removeDiscount()`
+
+Remove a discount code from the cart.
+
+A method that returns a Promise that resolves with a cart, given a Cart ID and Discount ID.
+
+#### Usage
+
+```js
+utils.client.cart.removeDiscount(
+    cartId,
+    discountId
+)
+```
+
+#### Response
+
+See [Cart Response](#cartresponse)
+
+#### `cart.getShipToCountries()`
+
+Get the countries that the store will ship to.
+
+Method returns a Promise that resolves with an array of objects containing country codes that the store will ship to. Depending on the country, the Administrative Areas in the country object may or may not be empty.
+
+#### Usage
+
+```js
+utils.client.cart.getShipToCountries()
+```
+
+#### Response
+
+```js
+[
+    {
+        administrativeAreas: [
+            "AL",
+            "AK" // etc.
+        ],
+        country: "US"
+    }
+]
+
+```
 
 ### Categories
 
@@ -197,8 +502,6 @@ utils.client.menus.get()
     }]
 }
 ```
-
-### PayPal
 
 ### Products
 
