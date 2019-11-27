@@ -29,7 +29,7 @@ handle for hosting, caching, and CDN delivery for you, so you can focus on build
 
 ## High Level Architecture
 
-In a nutshell, Element let you build web applications from small React applications (called Blocks) that can be built separate one from the other. Then, you can group them
+In a nutshell, Element lets you build web applications from small React applications (called Blocks) that can be built separately. Then, you can group them
 together in pages as you see fit. When a page is requested by a user, all those small Javascript applications that you grouped into a page are rendered in
 our servers for better concurrency and the fastest markup generation possible. Once the page reaches the browser, the markup is hydrated to apply all the 
 interactivity elements to your site. You can communicate between the page's Blocks by using a simple PubSub mechanism.
