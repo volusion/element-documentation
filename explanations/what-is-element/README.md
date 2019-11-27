@@ -1,4 +1,4 @@
-# What Is Element
+# What Is Element?
 
 Element is a modern web platform to deliver the fastest web experiences for mobile and desktop.
 
@@ -37,5 +37,4 @@ interactivity elements to your site. You can communicate between the page's Bloc
 ## Further Reading
 
 To learn more about Element, read the [Concepts](../explanation/element-concepts) explanation.
-
 
