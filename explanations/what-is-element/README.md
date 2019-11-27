@@ -16,7 +16,7 @@ The Element platform has its foundations on:
 
 ### Speed
 
-We take speed seriously. Using state of the art Server Side Rendering (SSR) technologies, we archive the fastest experiences possible.
+We take speed seriously. Using state of the art Server Side Rendering (SSR) technologies, we achieve the fastest experiences possible.
 
 ### SEO
 
