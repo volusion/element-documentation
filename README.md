@@ -4,7 +4,7 @@ Empty for now
 
 ## Explanations
 
-* [What Is Element](explanations/what-is-element/README.md)
+* [What Is Element?](explanations/what-is-element/README.md)
 * [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
 
 ## Tutorials
