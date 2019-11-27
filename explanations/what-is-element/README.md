@@ -18,6 +18,11 @@ The Element platform has its foundations on:
 
 We take speed seriously. Using state of the art Server Side Rendering (SSR) technologies, we achieve the fastest experiences possible.
 
+Additionally, our technology is [Google AMP](https://developers.google.com/amp) ready, so you can build your sites to take 
+[advantage of AMP](https://amp.dev/about/how-amp-works/) speed. You can progressively add AMP support to your page by making sure you follow
+some [simple techniques](TODO - amp link) when developing on Element. But no need to worry, if you don't want to be AMP ready by
+default your sites will still be [super fast](TODO keeping sites fast).
+
 ### SEO
 
 As the full markup of the site is generated on the server, search engines will get all the content to rank your sites better.
