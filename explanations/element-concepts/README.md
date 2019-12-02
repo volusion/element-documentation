@@ -4,7 +4,7 @@ This document will describe the basic concepts of the Element platform.
 
 ## Blocks
 
-Blocks are the basic unit of Element. They are nothing else than small Javascript applications built with React. Some characteristics: 
+Blocks are the basic unit of Element. They are small Javascript applications built with React. Some characteristics: 
 
 - Self contained (Can be used and developed independently one from the other).
 - Composed of markup (React), styles (css-in-js), and data (universal data fetch).
