@@ -20,7 +20,9 @@ Empty for now
 * [How to Reuse a Block across Multiple Pages](how-to/reuse-a-block-across-pages/README.md)
 * [How to Add a Page to a Theme](how-to/add-page-to-theme/README.md)
 * [How to Fetch Data from Third Party Services](how-to/data-third-party-services/README.md)
+* [How to Add a Page That Depends on URI Parameters](how-to/add-page-with-uri-parameters/README.md)
 
 ## References
 
 * [Visual Guide to Proptypes](references/proptypes/README.md)
+* [Cart Events](references/cart-events/README.md)
