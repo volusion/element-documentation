@@ -23,3 +23,4 @@ Empty for now
 ## References
 
 * [Visual Guide to Proptypes](references/proptypes/README.md)
+* [Cart Events](references/cart-events/README.md)
