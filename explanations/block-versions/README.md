@@ -6,7 +6,7 @@ users of our blocks, but also, adding new features or fixing bugs when required.
 
 ## Staging vs Production
 
-A block is in staging mode when you have published changes, but are not released yet. Every time you publish new code, the system will create
+A block is in staging mode when you have published changes, but the changes are not released yet. Every time you publish new code, the system will create
 a staging version that is only visible to you and the members of your org. Thanks to this protection, even if your block is being used by thousands
 of users, they won't see the changes that you are making. The staging mode is useful while developing or making changes to blocks.
 
