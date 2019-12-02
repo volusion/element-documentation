@@ -10,7 +10,7 @@ A block is in staging mode when you have published changes, but the changes are 
 a staging version that is only visible to you and the members of your org. Thanks to this protection, even if your block is being used by thousands
 of users, they won't see the changes that you are making. The staging mode is useful while developing or making changes to blocks.
 
-When you are ready you can make your code generally available by releasing your changes, promoting your changes from staging to production mode. When
+When you are ready you can make your code available to users outside of your organization by releasing your changes, promoting your changes from staging to production mode. When
 you release a change, you have two options, a minor or a major release.
 
 ## Minor vs Major Release
