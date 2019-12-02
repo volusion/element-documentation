@@ -6,6 +6,7 @@ Empty for now
 
 * [What Is Element?](explanations/what-is-element/README.md)
 * [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
+* [Block Versions](explanations/block-versions/README.md)
 
 ## Tutorials
 
