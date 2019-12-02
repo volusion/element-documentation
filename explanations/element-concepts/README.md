@@ -1,6 +1,6 @@
 # Element Concepts
 
-Next, we will describe the basic concepts of the Element platform.
+This document will describe the basic concepts of the Element platform.
 
 ## Blocks
 
