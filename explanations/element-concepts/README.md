@@ -33,7 +33,7 @@ configured differently on each page, or [use the same configuration across all p
 Themes are a collection of pages. You can add a header and a footer to all your pages in a single operation for example, set global
 styles that are visible to all your pages, preview your work without affecting your site and many more.
 
-Each store has an installed theme that is visible to all your site users. When you perform an edit to your live theme, a copy is created
+Each store has an installed theme that is visible to all your site users. When you perform an edit to your live theme, a draft copy is created
 that can be used without affecting your site. You can apply as many changes as needed without fear. Once you are ready, you can promote
 your copy to be the installed theme by publishing it. You can have as many themes as you want to test ideas. Each theme has a preview URL to see the progress
 online.
