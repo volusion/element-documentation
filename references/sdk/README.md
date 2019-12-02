@@ -17,7 +17,7 @@ export const getDataProps = (utils, { productSlug }) => {
 
 See [How to Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md) for more background behind that example.
 
-**Tip**: To explore the SDK without even building a block you can navigate to Site Designer or a page built on Element in your browser, and access the methods directly from your javascript console like this:
+**Tip**: To explore the SDK locally from a block's `local/index.js` file, or from your browser's javascript console from a store running on Element, try this:
 
 ```js
 window.ElementSdk.client.categories.get()
