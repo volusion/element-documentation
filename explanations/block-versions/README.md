@@ -25,3 +25,5 @@ This is the difference between a minor and a major release:
 
 Major releases are tagged internally with ascending numbers, starting from one. Each new version will increment the number by one. For minor versions, there is no explicit numeric tagging, but it is a good practice to
 tag your minor releases using git or similar. For more details, see [how to keep track of your block versions](TODO - link)
+
+For each release, you can add a release note. Users of your block will be able to read the latest release note you add.
