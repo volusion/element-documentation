@@ -35,7 +35,7 @@ styles that are visible to all your pages, preview your work without affecting y
 
 Each store has an installed theme that is visible to all your site users. When you perform an edit to your live theme, a copy is created
 that can be used without affecting your site. You can apply as many changes as needed without fear. Once you are ready, you can promote
-your copy to be the installed theme. You can have as many themes as you want to test ideas. Each theme has a preview URL to see the progress
+your copy to be the installed theme by publishing it. You can have as many themes as you want to test ideas. Each theme has a preview URL to see the progress
 online.
 
 ## The E-Commerce Theme
