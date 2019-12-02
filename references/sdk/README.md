@@ -42,6 +42,7 @@ window.ElementSdk.client.categories.get()
   * [`products.getRelatedBySlug()`](#productsgetrelatedbyslug)
   * [`products.getByCategoryId()`](#productsgetbycategoryid)
   * [`products.getWithChildCategories()`](#productsgetwithchildcategories)
+* [Request](#request)
 * [Store Information](#store-information)
   * [`storeInfo.get()` & `setStoreInfo()`](#storeinfoget--setstoreinfo)
   * [`storeInformation`](#storeinformation)
@@ -445,6 +446,20 @@ utils.client.products.getWithChildCategories('category123', categoryTree)
 ]
 ```
 
+### Request
+
+An asynchronous function that behaves exactly like [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API), returning a promise that resolves with a response from a third party API endpoint.
+
+#### Usage
+
+```js
+utils.client.request("https://jsonplaceholder.typicode.com/posts")
+    .then(res => res.json())
+    .catch(e => []);
+```
+
+**TIP:** always use this when [calling third party services](/how-to/data-third-party-services) so that your block behaves consistently when rendered by the server or on the client-side.
+
 ### Store Information
 
 #### `storeInfo.get()` & `setStoreInfo()`
@@ -460,8 +475,6 @@ utils.client.storeInfo
         utils.client.setStoreInfo(data);
     });
 ```
-
-**Note:** In most cases getting and setting Store Information will have already been done, and you can read the data from the `storeInformation` property below.
 
 #### `storeInformation`
 
