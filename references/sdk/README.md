@@ -44,7 +44,6 @@ window.ElementSdk.client.categories.get()
   * [`products.getWithChildCategories()`](#productsgetwithchildcategories)
 * [Request](#request)
 * [Store Information](#store-information)
-  * [`storeInfo.get()` & `setStoreInfo()`](#storeinfoget--setstoreinfo)
   * [`storeInformation`](#storeinformation)
 * [Tenant ID](#tenant-id)
   * [`tenant`](#tenant)
@@ -462,19 +461,6 @@ utils.client.request("https://jsonplaceholder.typicode.com/posts")
 
 ### Store Information
 
-#### `storeInfo.get()` & `setStoreInfo()`
-
-A method that returns a Promise that resolves with the data for the configured store's tenant, and a method to set that data on the `storeInformation` property.
-
-#### Usage
-
-```js
-utils.client.storeInfo
-    .get()
-    .then(data => {
-        utils.client.setStoreInfo(data);
-    });
-```
 
 #### `storeInformation`
 
