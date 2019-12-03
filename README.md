@@ -4,8 +4,10 @@ Empty for now
 
 ## Explanations
 
-* [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
+* [What Is Element?](explanations/what-is-element/README.md)
 * [Element Concepts](explanations/element-concepts/README.md)
+* [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
+* [Block Versions](explanations/block-versions/README.md)
 
 ## Tutorials
 
@@ -17,9 +19,14 @@ Empty for now
 * [How to Add Element Proptypes to a Block](how-to/proptypes/README.md)
 * [How to Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
 * [How to Add Blocks across All Your Site Pages Using Templates](how-to/add-blocks-to-templates/README.md)
+* [How to Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md)
 * [How to Reuse a Block across Multiple Pages](how-to/reuse-a-block-across-pages/README.md)
 * [How to Add a Page to a Theme](how-to/add-page-to-theme/README.md)
+* [How to Fetch Data from Third Party Services](how-to/data-third-party-services/README.md)
+* [How to Communicate between Two (Or More) blocks](how-to/communicate-between-blocks/README.md)
+* [How to Add a Page That Depends on URI Parameters](how-to/add-page-with-uri-parameters/README.md)
 
 ## References
 
 * [Visual Guide to Proptypes](references/proptypes/README.md)
+* [Cart Events](references/cart-events/README.md)
