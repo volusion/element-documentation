@@ -19,7 +19,7 @@ Developing a block is a matter of:
 - Selecting and calling the [data sources](TODO-link-fetching-data-fast) that will populate the block with meaningful data.
 - Displaying the data and wiring some interactions. (TODO-link)
 - Styling the block to look nice. (TODO-link)
-- Publishing the block and use it in pages. (TODO-link)
+- Publishing the block and using it in pages. (TODO-link)
 
 ## Pages
 
