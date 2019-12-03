@@ -40,5 +40,5 @@ online.
 
 ## The E-Commerce Theme
 
-Volusion is an e-commerce platform and we provide a [basic theme start](../e-commerce-pages/README.md) for that purpose. You can still use Element to build any kind of sites, not
+Volusion is an e-commerce platform and we provide a [basic theme starter](../e-commerce-pages/README.md) for that purpose. You can still use Element to build any kind of sites, not
 just e-commerce. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want.
