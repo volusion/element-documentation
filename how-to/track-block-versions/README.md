@@ -1,6 +1,6 @@
 # How to Keep Track of Your Block Versions
 
-In this how-to guide we will explore how to keep track of block versions to maintain your block's code organized. We will assume that you are already
+In this how-to guide we will explore how to keep track of block versions to maintain and organize your block's code. We will assume that you are already
 developing a block locally and want to publish your block for the first time.
 
 An explanation about [Block Versions](../../explanation/block-versions/README.md) is a recommended read.
@@ -112,6 +112,5 @@ a branch called `v2` will be created. Additionally the block will be published t
 3 to 8 as needed for the new version.
 
 If you need to release changes for different block versions, just change to the appropriate branches.
-
 
 
