@@ -23,7 +23,7 @@ export const getDataProps = (utils, props) => {
 }
 ```
 
-The `request` function is exactly like the the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) function, and works both in the server and on the client.
+The `request` function is exactly like the [fetch](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API) function, and works both in the server and on the client.
 You don't have to care about importing the right version of the function depending on which environment you are in.
 
 ## 3. Use the Data from Your Block
