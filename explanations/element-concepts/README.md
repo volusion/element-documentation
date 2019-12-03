@@ -26,7 +26,7 @@ Developing a block is a matter of:
 Pages are a collection of blocks. Pages are [created](../../how-to/add-page-to-theme/README.md) and customized using the Site Designer.
 
 In a page, you can add as many blocks as you want. You can use Volusion's blocks, or you can use your own. Each block can be
-configured differently on each page, or [use the same configuration across all pages](/how-to/reuse-a-block-across-pages/README.md). All depends on what you want to achieve.
+configured differently on each page, or [use the same configuration across all pages](/how-to/reuse-a-block-across-pages/README.md). It all depends on what you want to achieve.
 
 ## Themes
 
