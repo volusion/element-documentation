@@ -58,7 +58,7 @@ The release note is optional.
 Here it is a good moment to commit the change to git.
 
 ```
-git commit -m "First major release"
+git commit -am "First major release"
 ```
 
 ## 6. Create a Minor Release
@@ -79,7 +79,7 @@ Once your change is ready to reach your users, just release it. It is also a goo
 npm run build
 element update
 element release -n "A minor release"
-git commit -m "A minor release"
+git commit -am "A minor release"
 ```
 
 ## 8. Rolling Back a Minor Release (When Needed)
@@ -112,4 +112,3 @@ a branch called `v2` will be created. Additionally the block will be published t
 3 to 8 as needed for the new version.
 
 If you need to release changes for different block versions, just change to the appropriate branches.
-
