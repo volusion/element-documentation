@@ -10,7 +10,7 @@ Blocks are the basic unit of Element. They are small Javascript applications bui
 - Composed of markup (React), styles (css-in-js), and data (universal data fetch).
 - Communicate with other blocks using a PubSub mechanism.
 - Can fetch data from the Volusion API or any external data source.
-- Have configurations defined by the developer that the block user can tweak to customize looks and behaviour.
+- Have configurations defined by the developer that the block user can tweak to customize looks and behavior.
 
 Developing a block is a matter of:
 
