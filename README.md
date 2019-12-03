@@ -23,6 +23,7 @@ Empty for now
 * [How to Add a Page to a Theme](how-to/add-page-to-theme/README.md)
 * [How to Communicate between Two (Or More) blocks](how-to/communicate-between-blocks/README.md)
 * [How to Add a Page That Depends on URI Parameters](how-to/add-page-with-uri-parameters/README.md)
+* [How to Fetch Data from Volusion's API](how-to/data-volusion-api/README.md)
 
 ## References
 
