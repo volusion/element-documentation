@@ -65,7 +65,7 @@ When you are ready, you can return to your terminal and run this command to rele
 
 **Remember that releasing will affect your block users.**
 
- TODO: link to documentation for releasing block changes
+ [How to Keep Track of Your Block Versions](/how-to/track-block-versions/README.md)
 
  TODO: link to explanation doc for block versions
 

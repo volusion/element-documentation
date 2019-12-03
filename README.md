@@ -1,7 +1,5 @@
 # Element Platform documentation
 
-Empty for now
-
 ## Explanations
 
 * [What Is Element?](explanations/what-is-element/README.md)
@@ -15,18 +13,23 @@ Empty for now
 
 ## How-to guides
 
-* [How to Set up Your Environment for Developing Blocks](how-to/env-setup/README.md)
-* [How to Keep Track of Your Block Versions](how-to/track-block-versions/README.md)
+### Block Development How-to's
+
+* [Set up Your Environment for Developing Blocks](how-to/env-setup/README.md)
 * [How to Add Element Proptypes to a Block](how-to/proptypes/README.md)
-* [How to Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
-* [How to Add Blocks across All Your Site Pages Using Templates](how-to/add-blocks-to-templates/README.md)
-* [How to Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md)
-* [How to Reuse a Block across Multiple Pages](how-to/reuse-a-block-across-pages/README.md)
-* [How to Add a Page to a Theme](how-to/add-page-to-theme/README.md)
-* [How to Fetch Data from Third Party Services](how-to/data-third-party-services/README.md)
-* [How to Communicate between Two (Or More) blocks](how-to/communicate-between-blocks/README.md)
-* [How to Add a Page That Depends on URI Parameters](how-to/add-page-with-uri-parameters/README.md)
-* [How to Fetch Data from Volusion's API](how-to/data-volusion-api/README.md)
+* [Add Element Proptypes to a Block](how-to/proptypes/README.md)
+* [Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md)
+* [Fetch Data from Volusion's API](how-to/data-volusion-api/README.md)
+* [Fetch Data from Third Party Services](how-to/data-third-party-services/README.md)
+* [Communicate between Two (Or More) blocks](how-to/communicate-between-blocks/README.md)
+* [Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
+
+### Site Designer How-to's
+
+* [Add a Page to a Theme](how-to/add-page-to-theme/README.md)
+* [Add Blocks across All Your Site Pages Using Templates](how-to/add-blocks-to-templates/README.md)
+* [Reuse a Block across Multiple Pages](how-to/reuse-a-block-across-pages/README.md)
+* [Add a Page That Depends on URI Parameters](how-to/add-page-with-uri-parameters/README.md)
 
 ## References
 

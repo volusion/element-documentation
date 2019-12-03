@@ -51,4 +51,4 @@ Repeat for all blocks you want to add to the page.
 Now that you've created your page, you need to link to it.
 
 1. Hard code a link to a specific resource, for example if you are buying advertising that will link to an article about a specific product, it might look something like this: `/product-article/desk-lamp`
-2. Build a block that builds links dynamically using data from the Volusion API that you get through the SDK (TODO: link to reference from V2-3520)
+2. Build a block that builds links dynamically using data from the [Volusion API that you get through ElementSdk](/references/sdk/README.md).

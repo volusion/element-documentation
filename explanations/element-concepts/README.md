@@ -15,8 +15,8 @@ Blocks are the basic unit of Element. They are small Javascript applications bui
 Developing a block is a matter of:
 
 - Using the [Element CLI](TODO-link) to get the block boilerplate.
-- Defining and [implementing a configuration](../../how-to/proptypes/README.md) (As a Javascript object).
-- Selecting and calling the [data sources](TODO-link-fetching-data-fast) that will populate the block with meaningful data.
+- Defining and [implementing a configuration](/how-to/proptypes/README.md) (As a Javascript object).
+- Selecting and calling [Volusion's API](/how-to/data-volusion-api/README.md) or [third party services](/how-to/data-third-party-services/README.md) that will populate the block with meaningful data.
 - Displaying the data and wiring some interactions. (TODO-link)
 - Styling the block to look nice. (TODO-link)
 - Publishing the block and using it in pages. (TODO-link)
