@@ -7,7 +7,7 @@ An explanation about [Block Versions](../../explanation/block-versions/README.md
 
 ## 1. Initialize a Git Repository with Your Block Code 
 
-If you haven't already, we really recommend you to keep your code organized using `git`. It's as easy as running:
+If you haven't already, we really recommend you keep your code organized using `git`. It's as easy as running:
 
 ```bash
 git init
@@ -21,7 +21,7 @@ element new --git MyBlock
 
 ## 2. Publish Your Block for the First Time
 
-It's time to test your work online, both in the Site Designer and in a live domain. To do that, let's publish the block:
+It's time to test your work online, both in the Site Designer and on a live domain. To do that, let's publish the block:
 
 ```bash
 npm run build
@@ -63,7 +63,7 @@ git commit -m "First major release"
 
 ## 6. Create a Minor Release
 
-Once you published your first major release, you can publish as many minor releases as you want. The minor release are linked to your major release.
+Once you have published your first major release, you can publish as many minor releases as you want. The minor release are linked to your major release.
 
 ```bash
 element update
@@ -96,12 +96,12 @@ cannot be rolled back.
 Every time you run it, remember to point your repo to the right commit to have the same code locally and in the Element servers.
 
 ```
-git checkout "commit_id_of_previous_minor_releas"
+git checkout "commit_id_of_previous_minor_release"
 ```
 
 ## 9. Creating a New Major Version
 
-Sometimes you will need to publish a new version of your block, with new feature, breaking changes or something that diverges a bit from the original one.
+Sometimes you will need to publish a new version of your block, with a new feature, breaking changes, or something that diverges a bit from the original one.
 
 ```
 element publish -m
@@ -112,5 +112,4 @@ a branch called `v2` will be created. Additionally the block will be published t
 3 to 8 as needed for the new version.
 
 If you need to release changes for different block versions, just change to the appropriate branches.
-
 
