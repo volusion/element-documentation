@@ -29,4 +29,5 @@ Empty for now
 ## References
 
 * [Visual Guide to Proptypes](references/proptypes/README.md)
+* [Volusion API ElementSdk Client Reference](references/sdk/README.md)
 * [Cart Events](references/cart-events/README.md)
