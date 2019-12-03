@@ -1,5 +1,25 @@
 # Visual Guide to Proptypes
 
+## Table of Contents
+
+* [number](#number)
+* [bool](#bool)
+* [string](#string)
+* [color](#color)
+* [product](#product)
+* [category](#category)
+* [sectionHeader](#sectionheader)
+* [image](#image)
+* [slider](#slider)
+* [editorFull](#editorfull)
+* [editorMinimal](#editorminimal)
+* [readOnly](#readonly)
+* [oneOf](#oneof)
+* [arrayOf shape](#arrayof-shape)
+* [embeddable](#embeddable)
+* [Private Properties](#private-properties)
+* [Further Reading](#further-reading)
+
 ## number
 
 ![Number: 42](proptype-number.png)
@@ -68,6 +88,8 @@ export const defaultConfig = {
 };
 ```
 
+**Note:** merchant edits to color fields will are stored in RGBA format.
+
 ## product
 
 ![Product](proptype-product.png)
@@ -79,6 +101,8 @@ product: {
 }
 ```
 
+In the block, `props.product` will be the ID of the product selected by the merchant.
+
 ## category
 
 ![Category](proptype-category.png)
@@ -89,6 +113,8 @@ category: {
     type: ElementPropTypes.category
 }
 ```
+
+In the block, `props.category` will be the ID of the category selected by the merchant.
 
 ## sectionHeader
 
@@ -150,22 +176,7 @@ export const defaultConfig = {
 
 ## slider
 
-![Slider: default](proptype-slider.png)
-
-```js
-sliderDefault: {
-    label: 'Slider Default',
-    type: ElementPropTypes.slider
-}
-```
-
-```js
-export const defaultConfig = {
-
-};
-```
-
-![Slider: options](proptype-slider-options.png)
+![Slider: options](proptype-slider.png)
 
 ```js
 sliderOptions: {
@@ -263,35 +274,6 @@ export const defaultConfig = {
 };
 ```
 
-## shape
-
-![Shape](proptype-shape.png)
-
-```js
-shape: {
-    label: 'Shape',
-    type: ElementPropTypes.shape({
-        text: {
-            label: 'Text',
-            type: ElementPropTypes.string
-        },
-        url: {
-            label: 'Link',
-            type: ElementPropTypes.string
-        }
-    })
-}
-```
-
-```js
-export const defaultConfig = {
-    shape: {
-        text: 'Link',
-        url: 'https://'
-    }
-};
-```
-
 ## arrayOf shape
 
 ![arrayOf Shape](proptype-array-of-shape.png)
@@ -348,7 +330,7 @@ embeddable: {
 ```js
 export const defaultConfig = {
     embeddable: {
-        embedType: 'iframe',
+        embedType: 'iframe', // the only supported value
         url: 'https://www.volusion.com/login',
         height: 150
     }
@@ -369,5 +351,5 @@ string: {
 
 ## Further reading
 
-- [Working with Element Proptypes Tutorial](/tutorials/proptypes/README.md)
-- [How to: Add Element Proptypes to a Block](/how-to/proptypes/README.md)
+* [Working with Element Proptypes Tutorial](/tutorials/proptypes/README.md)
+* [How to: Add Element Proptypes to a Block](/how-to/proptypes/README.md)
