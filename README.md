@@ -16,7 +16,7 @@
 ### Block Development How-to's
 
 * [Set up Your Environment for Developing Blocks](how-to/env-setup/README.md)
-* [How to Add Element Proptypes to a Block](how-to/proptypes/README.md)
+* [Keep Track of Your Block Versions](how-to/track-block-versions/README.md)
 * [Add Element Proptypes to a Block](how-to/proptypes/README.md)
 * [Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md)
 * [Fetch Data from Volusion's API](how-to/data-volusion-api/README.md)
@@ -37,3 +37,4 @@
 * [Visual Guide to Proptypes](references/proptypes/README.md)
 * [Volusion API ElementSdk Client Reference](references/sdk/README.md)
 * [Cart Events](references/cart-events/README.md)
+* [Element CLI](references/element-cli/README.md)
