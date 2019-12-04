@@ -2,7 +2,7 @@
 
 Some of your custom blocks may need to interact with the cart, for example if you wanted to add an item to the cart from your block, or trigger an action in your block after a shopper adds an item to the cart. You can do this with the included PubSubJS mechanism.
 
-To get a sense of what cart interactions are possible, see the [Cart Events Reference](../references/cart-events/README.md).
+To get a sense of what cart interactions are possible, see the [Cart Events Reference](/references/cart-events/README.md).
 
 For more details on PubSubJS, see the [PubSubJS npm reference](https://www.npmjs.com/package/pubsub-js).
 
@@ -25,7 +25,7 @@ componentDidMount() {
 
 `utils.pubSub.subscribe()` takes two arguments:
 
-1. A topic name, which should be one of the [Cart Events](../references/cart-events/README.md).
+1. A topic name, which should be one of the [Cart Events](/references/cart-events/README.md).
 2. A handler function. The message will be passed to the handler function.
 
 ### Implement Your Handler Function for the Subscription
@@ -48,7 +48,7 @@ Your block may want to publish an event to the cart. This can allow you to add a
 
 Send your message using `utils.pubSub.publish()` in your block. This function takes two arguments:
 
-1. A topic name, which should be one of the [Cart Events](../references/cart-events/README.md). The cart block will listen for this topic.
+1. A topic name, which should be one of the [Cart Events](/references/cart-events/README.md). The cart block will listen for this topic.
 2. A data value (any type). This is the piece of data you will send to the cart.
 
 Example:
