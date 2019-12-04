@@ -21,4 +21,4 @@ Subscriptions using these topics should be referenced as properties of `this.pro
 
 For example, use `this.props.events.cart.addToCart`, not `"cart.addToCart"`.
 
-For more information about how to communicate between blocks using PubSubJS, see the guide for [How to Communicate between Two (Or More) Blocks](../how-to/communicate-between-blocks/README.md)
+For more information about how to communicate between blocks using PubSubJS, see the guide for [How to Communicate between Two (Or More) Blocks](/how-to/communicate-between-blocks/README.md)

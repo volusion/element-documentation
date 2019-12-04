@@ -41,4 +41,4 @@ interactivity elements to your site. You can communicate between the page's Bloc
 
 ## Further Reading
 
-To learn more about Element, read the [Concepts](../explanation/element-concepts) explanation.
+To learn more about Element, read the [Concepts](/explanations/element-concepts) explanation.
