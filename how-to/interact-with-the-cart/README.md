@@ -2,10 +2,6 @@
 
 Some of your custom blocks may need to interact with the cart, for example if you wanted to add an item to the cart from your block, or trigger an action in your block after a shopper adds an item to the cart. You can do this with the included PubSubJS mechanism.
 
-To get a sense of what cart interactions are possible, see the [Cart Events Reference](/references/cart-events/README.md).
-
-For more details on PubSubJS, see the [PubSubJS npm reference](https://www.npmjs.com/package/pubsub-js).
-
 ## 1. Listening for a Cart Event
 
 If you want your block to respond to changes in the cart, you should set up your block to listen for a cart event using PubSubJS.
@@ -72,3 +68,9 @@ In this example, the cart block expects `itemData` to be an object with the foll
     itemPrice
 }
 ```
+
+## Further Reading
+
+To get a sense of what cart interactions are possible, see the [Cart Events Reference](/references/cart-events/README.md).
+
+For more details on PubSubJS, see the [PubSubJS npm reference](https://www.npmjs.com/package/pubsub-js).
