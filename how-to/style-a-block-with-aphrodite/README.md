@@ -1,4 +1,4 @@
-# Styling a block with aphrodite
+# Styling a Block with Aphrodite
 
 Aphrodite is a framework for writing Javascript based CSS and creating dynamic classes for use in React. You can read more about it in the <a href="https://github.com/Khan/aphrodite" target="_blank">official documentation</a>.
 
