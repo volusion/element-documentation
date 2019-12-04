@@ -18,6 +18,7 @@
 * [Set up Your Environment for Developing Blocks](how-to/env-setup/README.md)
 * [Keep Track of Your Block Versions](how-to/track-block-versions/README.md)
 * [Add Element Proptypes to a Block](how-to/proptypes/README.md)
+* [Style a Block with aphrodite](how-to/style-a-block-with-aphrodite/README.md)
 * [Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md)
 * [Fetch Data from Volusion's API](how-to/data-volusion-api/README.md)
 * [Fetch Data from Third Party Services](how-to/data-third-party-services/README.md)
