@@ -2,11 +2,11 @@
 
 ## 1. Figure Out What Block(s) you Will Use
 
-You need at least one block that reads the pageVar from the URI. This can be an existing block, such as Related Products, or a block that you created yourself and set up to use the pageVar. If you want to use your own block, see the guide for [How to Read Page URI Parameters from Your Blocks](../read-page-uri-parameters-in-blocks/README.md).
+You need at least one block that reads the pageVar from the URI. This can be an existing block, such as Related Products, or a block that you created yourself and set up to use the pageVar. If you want to use your own block, see the guide for [How to Read Page URI Parameters from Your Blocks](/how-to/read-page-uri-parameters-in-blocks/README.md).
 
 ## 2. Start Creating a New Page
 
-Add a page to your theme in Site Designer. For a full guide, see [How to Add a Page to a Theme](../add-page-to-theme/README.md). You'll probably follow these steps:
+Add a page to your theme in Site Designer. For a full guide, see [How to Add a Page to a Theme](/how-to/add-page-to-theme/README.md). You'll probably follow these steps:
 
 1. Navigate to Site Designer. If you are not already editing your theme, click the **edit** (or **continue editing**) button to open your theme.
 2. Open the pages dropdown. By default it will say "Page: Home". Select the "Add a Page" option at the bottom.
@@ -28,7 +28,7 @@ Your block will get the value in the store's actual page URI, not `:pageUrlText`
 
 For example, for a URI with `/special-features/modern-teapot`, your block would receive the value `modern-teapot`.
 
-See [How to Read Page URI Parameters from Your Blocks](../read-page-uri-parameters-in-blocks/README.md) for more details.
+See [How to Read Page URI Parameters from Your Blocks](/how-to/read-page-uri-parameters-in-blocks/README.md) for more details.
 
 ## 4. Finish Creating the Page
 
