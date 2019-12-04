@@ -35,7 +35,7 @@ export const getStyles(globalProps, blockProps) => ({
 })
 ```
 
-Remember, you're writing javascript based CSS, so be sure to use the correct CSS rule names (ie `backgroundColor` instead of `background-color`).
+Remember, you're writing Javascript based CSS, so be sure to use the correct CSS rule names (ie `backgroundColor` instead of `background-color`).
 
 If you have defined user-editable props, you can reference them like this:
 
