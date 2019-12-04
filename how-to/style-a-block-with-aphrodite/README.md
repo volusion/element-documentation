@@ -1,6 +1,6 @@
 # Styling a block with aphrodite
 
-Aphrodite is a framework for writing javascript based css and creating dynamic classes for use in React. You can read more about it in the <a href="https://github.com/Khan/aphrodite" target="_blank">official documentation</a>.
+Aphrodite is a framework for writing Javascript based CSS and creating dynamic classes for use in React. You can read more about it in the <a href="https://github.com/Khan/aphrodite" target="_blank">official documentation</a>.
 
 ## Writing your styles.
 
@@ -16,7 +16,7 @@ You will write your CSS in a file called `getStyles.js`. The `getStyles` functio
 export const getStyles(globalProps, blockProps) => ({})
 ```
 
-You will want to write your css in this format:
+You will want to write your CSS in this format:
 
 ```javascript
 yourClassName: {
@@ -35,7 +35,7 @@ export const getStyles(globalProps, blockProps) => ({
 })
 ```
 
-Remember, you're writing javascript based CSS, so be sure to use the correct css rule names (ie `backgroundColor` instead of `background-color`).
+Remember, you're writing javascript based CSS, so be sure to use the correct CSS rule names (ie `backgroundColor` instead of `background-color`).
 
 If you have defined user-editable props, you can reference them like this:
 
