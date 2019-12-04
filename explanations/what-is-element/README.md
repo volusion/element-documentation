@@ -29,6 +29,4 @@ We give you the full power of Javascript and React. No need to learn a custom pr
 
 ## Further Reading
 
-In a nutshell, Element lets you build web applications from small React applications (called Blocks) that can be built separately. Then, you can group them together in pages as you see fit. When a page is requested by a user, all those small Javascript applications that you grouped into a page are rendered in our servers for better concurrency and the fastest markup generation possible. Once the page reaches the browser, the markup is hydrated to apply all the interactivity elements to your site. You can communicate between the page's Blocks by using a simple PubSub mechanism.
-
-To learn more about Element, read the [Concepts](../explanation/element-concepts) explanation.
+To learn more about Element, read the [Concepts](/explanations/element-concepts) explanation.

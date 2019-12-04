@@ -8,7 +8,7 @@ For more details on PubSubJS, see the [PubSubJS npm reference](https://www.npmjs
 
 ## 1. Identify the Blocks That Need to Communicate with Each Other
 
-The first step of setting up block communication is figuring out which block will send messages (the sender), and which blocks will receive those messages (the receivers). In Element, some pre-made blocks already send messages to each other, and you can listen for those events in your blocks. See the [Cart Events Reference](../references/cart-events/README.md) for more info.
+The first step of setting up block communication is figuring out which block will send messages (the sender), and which blocks will receive those messages (the receivers). In Element, some pre-made blocks already send messages to each other, and you can listen for those events in your blocks. See the [Cart Events Reference](/references/cart-events/README.md) for more info.
 
 For this guide, you will be setting up **your own blocks** as senders and receivers of messages.
 
@@ -87,4 +87,4 @@ Repeat this process for more receiver blocks, if necessary.
 
 ## Appendix: Listening for Existing Messages
 
-To set up your blocks to listen for existing messages, see the [Cart Events Reference](../references/cart-events/README.md).
+To set up your blocks to listen for existing messages, see the [Cart Events Reference](/references/cart-events/README.md).

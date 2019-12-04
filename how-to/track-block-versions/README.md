@@ -3,7 +3,7 @@
 In this how-to guide we will explore how to keep track of block versions to maintain and organize your block's code. We will assume that you are already
 developing a block locally and want to publish your block for the first time.
 
-An explanation about [Block Versions](../../explanation/block-versions/README.md) is a recommended read.
+An explanation about [Block Versions](/explanations/block-versions/README.md) is a recommended read.
 
 ## 1. Initialize a Git Repository with Your Block Code 
 

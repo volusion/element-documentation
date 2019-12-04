@@ -24,7 +24,7 @@ Developing a block is a matter of:
 
 ## Pages
 
-Pages are an arranged collection of blocks. Currently, Pages are [created](../../how-to/add-page-to-theme/README.md) and customized using the [Site Designer](http://TODO).
+Pages are an arranged collection of blocks. Currently, Pages are [created](/how-to/add-page-to-theme/README.md) and customized using the [Site Designer](http://TODO).
 
 In a page, you can add as many blocks as you want. You can use Volusion's default blocks, or you can use your own. Each block can be configured differently on each page or [use the same configuration across all pages](/how-to/reuse-a-block-across-pages/README.md). It all depends on what you want to achieve.
 
@@ -38,4 +38,4 @@ By default, each store has a live theme that is visible to all your site users. 
 
 ### The E-Commerce Theme
 
-Volusion is an e-commerce platform and we provide a [basic starter theme](../e-commerce-pages/README.md) for that purpose. You can still use Element to build any kind of sites, not just e-commerce. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want.
+Volusion is an e-commerce platform and we provide a [basic starter theme](../e-commerce-pages/README.md) for that purpose. You can still use Element to build any kind of sites, not just e-commerce. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want.
