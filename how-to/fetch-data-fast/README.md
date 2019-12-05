@@ -39,7 +39,7 @@ With this simple change the `categories` and `menus` data will each be fetched c
 
 Please keep in mind the following:
 
-- Currently Element does not support async/await. You need to use promises. (This will be remedied soon.)
+* Currently Element does not support async/await. You need to use promises. (This will be remedied soon.)
 - When fetching data, think about the dependencies between the information you are fetching. If no
   dependency exists, fetch the data concurrently to reduce latency and exploit the fastest server side
   rendering possible.
