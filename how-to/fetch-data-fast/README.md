@@ -35,7 +35,7 @@ export const getDataProps = (utils, props) => {
 };
 ```
 
-With this simple change the `categories` and `menus` data will eacy be fetched concurrently, thus reducing latency.
+With this simple change the `categories` and `menus` data will each be fetched concurrently, thus reducing latency.
 
 Please keep in mind the following:
 
