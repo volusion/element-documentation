@@ -52,7 +52,7 @@ It's always a good idea to provide a fallback for any user-editable props just i
 
 ### 3. Referencing Your Classes
 
-Your block should contain the props `css` and `classes` that you can use to reference your new aphrodite classes by writing them in the following manner: `css(classes.YOUR_CLASS_NAME)`.
+Your block should contain the props `css` and `classes` that you can use to reference your new Aphrodite classes by writing them in the following manner: `css(classes.YOUR_CLASS_NAME)`.
 
 Example:
 
@@ -106,7 +106,7 @@ export const LogoFactory = React => {
 
 ### 5. Creating Your Classes Manually
 
-You might find yourself using a component frequently enough that you want to extract it for repeat use in multiple blocks. If your component uses aphrodite classes, you will want to create your classes within your component (via its own `getStyles` file) instead of ensuring that each expected class is passed correctly. You can do this by passing the `StyleSheet` prop down from your block to your component. **NOTE: Global components will not be available to pass down in this manner**. To create your classes object manually, create a variable called `classes` using the following method:
+You might find yourself using a component frequently enough that you want to extract it for repeat use in multiple blocks. If your component uses Aphrodite classes, you will want to create your classes within your component (via its own `getStyles` file) instead of ensuring that each expected class is passed correctly. You can do this by passing the `StyleSheet` prop down from your block to your component. **NOTE: Global components will not be available to pass down in this manner**. To create your classes object manually, create a variable called `classes` using the following method:
 
 Example block code:
 
