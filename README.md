@@ -22,6 +22,7 @@
 * [Read Page URI Parameters from Your Block](how-to/read-page-uri-parameters-in-blocks/README.md)
 * [Fetch Data from Volusion's API](how-to/data-volusion-api/README.md)
 * [Fetch Data from Third Party Services](how-to/data-third-party-services/README.md)
+* [Fetch Block Data Fast](how-to/fetch-data-fast/README.md)
 * [Communicate between Two (Or More) blocks](how-to/communicate-between-blocks/README.md)
 * [Interact with the Cart](how-to/interact-with-the-cart/README.md)
 * [Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
