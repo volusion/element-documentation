@@ -1,6 +1,6 @@
 # Efficient Data Fetching for Blocks
 
-In this how-to, we will show how to fetch data as efficiently as possible using asynchronous requests in Javascript. As site speed is paramount to the end user experience, we recommend this technique.
+In this how-to, we will show how to fetch data as efficiently as possible using asynchronous requests in JavaScript. As site speed is paramount to the end user experience, we recommend this technique.
 
 Let's consider the following code in that might appear in `src/getDataProps.js`:
 
