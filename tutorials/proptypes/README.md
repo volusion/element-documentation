@@ -2,12 +2,12 @@
 
 In this 15 minute tutorial you will learn how to create a block with a configurable light and dark modes.
 
-TODO: Show a picture of light and dark modes here.
+![Preview](result-preview.png)
 
 ## Prerequisites
 
 - [Basic understanding of blocks](explanations/element-concepts/README.md)
-- [Element CLI installed](http://TODO)
+- [Element CLI installed](/how-to/env-setup/README.md)
 
 ## Create a New Block
 
@@ -62,9 +62,7 @@ export const defaultConfig = {
 
 ## Set up the "Dark" And "Light" Styles
 
-[TODO: link to Atomic CSS tutorial]
-
-In this step, we define the colors for the light and dark modes. Production quality code should use [Atomic CSS]() or put these colors in `ElementPropTypes.color` configs of their own. But, for the purposes of this demo we'll put them in the styles for the block. Open up `/src/getStyles.js` and update the code to look like this:
+In this step, we define the colors for the light and dark modes. Open up `/src/getStyles.js` and update the code to look like this:
 
 ```js
 export const getStyles = (globalStyles, blockConfig) => {
