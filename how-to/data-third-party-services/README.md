@@ -5,9 +5,9 @@ how to achieve just that.
 
 We will be consuming data from `https://jsonplaceholder.typicode.com/posts`
 
-## 1. Locate Your Get Data File 
+## 1. Locate Your Get Data File
 
-Open up your block's code and find /src/getDataProps.js. It should look like this:
+Open up your block's code and find `getDataProps.js`. It should look like this:
 
 ```js
 export const getDataProps = (utils, props) => Promise.resolve();

@@ -25,6 +25,7 @@
 * [Fetch Block Data Fast](how-to/fetch-data-fast/README.md)
 * [Communicate between Two (Or More) blocks](how-to/communicate-between-blocks/README.md)
 * [Interact with the Cart](how-to/interact-with-the-cart/README.md)
+* [Set Seo Data from a Block](/how-to/set-seo-data-from-a-block/README.md)
 * [Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
 
 ### Site Designer How-to's

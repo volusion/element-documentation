@@ -4,7 +4,7 @@ The primary goal of an e-commerce store is to sell products. In Element, the Vol
 
 ## 1. Locate Your Get Data File
 
-Open up your block's code and find `/src/getDataProps.js`. It should look like this:
+Open up your block's code and find `getDataProps.js`. It should look like this:
 
 ```js
 export const getDataProps = (utils, props) => Promise.resolve();
