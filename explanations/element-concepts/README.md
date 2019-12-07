@@ -7,24 +7,24 @@ This document describes the basic concepts of the Element platform.
 **Blocks** are the basic unit of Element. Blocks are powerful; they are small, reusable Javascript applications built with React. Blocks are arranged together to create a Page. Here are some basic facts about Element blocks:
 
 - Blocks are self contained---they can be used and developed in isolation of other blocks
-- Blocks contain markup in [React](http://TODO)
-- Blocks contain styles in [css-in-js](http://TODO)
+- Blocks contain markup in [React](https://reactjs.org/)
+- Blocks contain styles in [css-in-js using Aphrodite](/how-to/style-a-block-with-aphrodite/README.md)
 - Blocks can [fetch data from the Volusion API](/how-to/data-volusion-api/README.md) or [**any external data source**](/how-to/data-third-party-services/README.md)
 - Blocks can [communicate with other blocks using our built-in PubSub mechanism](/how-to/communicate-between-blocks/README.md)
 - Blocks have [developer-defined configurations](/how-to/proptypes/README.md) that can be adjusted by site owners **after deployment**.
 
 Developing a block is a matter of:
 
-- Using the [Element CLI](TODO-link) to get the block boilerplate
-- Defining and [implementing a configuration](/how-to/proptypes/README.md)
-- Selecting and calling the [data sources](TODO-link-fetching-data-fast) that will populate the block with meaningful data
-- Displaying the data and wiring some interactions. (TODO-link)
-- Styling the block to look nice. (TODO-link)
-- Publishing the block and using it in pages. (TODO-link)
+- Using the [Element CLI](/references/element-cli/README.md) to get the block boilerplate
+- Defining and [implementing a configuration](/how-to/proptypes/README.md). See also: [Intro tutorial](/tutorials/proptypes/README.md).
+- Selecting and calling the [data sources](/how-to/fetch-data-fast/README.md) that will populate the block with meaningful data
+- Displaying the data and wiring some interactions. ([Building an Element Page Tutorial](/tutorials/building-an-element-page/README.md))
+- [Styling the block](/how-to/style-a-block-with-aphrodite/README.md) to look nice.
+- Publishing the block and using it in pages. ([Building an Element Page Tutorial](/tutorials/building-an-element-page/README.md))
 
 ## Pages
 
-Pages are an arranged collection of blocks. Currently, Pages are [created](/how-to/add-page-to-theme/README.md) and customized using the [Site Designer](http://TODO).
+Pages are an arranged collection of blocks. Currently, Pages are [created](/how-to/add-page-to-theme/README.md) and customized using the [Site Designer](https://admin.volusion.com/designer).
 
 In a page, you can add as many blocks as you want. You can use Volusion's default blocks, or you can use your own. Each block can be configured differently on each page or [use the same configuration across all pages](/how-to/reuse-a-block-across-pages/README.md). It all depends on what you want to achieve.
 
@@ -38,4 +38,4 @@ By default, each store has a live theme that is visible to all your site users. 
 
 ### The E-Commerce Theme
 
-Volusion is an e-commerce platform and we provide a [basic starter theme](../e-commerce-pages/README.md) for that purpose. You can still use Element to build any kind of sites, not just e-commerce. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want.
+Volusion is an e-commerce platform and we provide a [basic starter theme](/explanations/e-commerce-pages/README.md) for that purpose. You can still use Element to build any kind of sites, not just e-commerce. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want. You can create pages to show a blog list and entries, a Q&A page, reviews, a map, a contact form, basically anything you want.

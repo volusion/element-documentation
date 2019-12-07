@@ -65,8 +65,8 @@ When you are ready, you can return to your terminal and run this command to rele
 
 **Remember that releasing will affect your block users.**
 
- [How to Keep Track of Your Block Versions](/how-to/track-block-versions/README.md)
+## Further Reading
 
- TODO: link to explanation doc for block versions
-
- TODO: link to Element CLI tutorial
+* [How to Keep Track of Your Block Versions](/how-to/track-block-versions/README.md)
+* [Block Versions Explanation](/explanations/block-versions/README.md)
+* [Element CLI Reference](/references/element-cli/README.md)

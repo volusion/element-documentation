@@ -151,5 +151,4 @@ handleUpdatedCartCount = (msg, count) => {
 
 For more details on PubSubJS, see the [PubSubJS npm reference](https://www.npmjs.com/package/pubsub-js).
 
-For more information about how to communicate between blocks using PubSubJS, see the guide for [How to Communicate between Two (Or More) Blocks](../how-to/communicate-between-blocks/README.md)
-
+For more information about how to communicate between blocks using PubSubJS, see the guide for [How to Communicate between Two (Or More) Blocks](/how-to/communicate-between-blocks/README.md)
