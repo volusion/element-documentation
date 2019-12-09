@@ -1,6 +1,6 @@
 # All the Tech You Need to Know to Develop on Element
 
-This section is really short as you don't need much in order to develop on the Element platform.
+Developing on the Element platform should be straightforward for developers who are familiar with React. Element follows standard conventions and strives for a developer-friendly experience.
 
 ## React
 
