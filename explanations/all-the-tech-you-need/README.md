@@ -6,7 +6,7 @@ Developing on the Element platform should be straightforward for developers who 
 
 We use [React](https://reactjs.org/) as the main framework. We don't use state management packages (like Redux or Mobx), and 
 you won't need it but you can add it if you want. Our sites use simple components with local state each. For component communication, we use a simple 
-[PubSub](../../how-to/communicate-between-blocks/README.md) mechanism.
+[PubSub](/how-to/communicate-between-blocks/README.md) mechanism.
 
 ## CSS
 
