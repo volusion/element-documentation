@@ -15,7 +15,8 @@ this technique to style your components.
 
 ## Element CLI
 
-In order to interact with Element, we developed a [CLI](../../how-to/env-setup) for making your workflow easier.
+In order to interact with Element, we developed a [CLI](../../how-to/env-setup) for making your workflow easier. The CLI uses **git** branches to manage
+multiple versions of your blocks.
 
 ## SDK
 
