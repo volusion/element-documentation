@@ -4,7 +4,7 @@ This section is really short as you don't need much in order to develop on the E
 
 ## React
 
-We use [React](https://reactjs.org/) as the main framework. We don't use state management packages (like Redux or Mobx), and probably
+We use [React](https://reactjs.org/) as the main framework. We don't use state management packages (like Redux or Mobx), and 
 you won't need it but you can add it if you want. Our sites use simple components with local state each. For component communication, we use a simple 
 [PubSub](../../how-to/communicate-between-blocks/README.md) mechanism.
 
