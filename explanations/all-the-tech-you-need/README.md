@@ -19,7 +19,7 @@ In order to interact with Element, we developed a [CLI](../../how-to/env-setup) 
 
 ## SDK
 
-When coding, you might need to access `e-commerce` data and other goodies. Each block will have access to an [SDK](../../references/sdk) that will help you 
+When coding, you might need to access `e-commerce` data and other goodies. Each block will have access to an [SDK](/references/sdk/README.md) that will help you 
 getting things done in your blocks.
 
 ## AMP (optional)
