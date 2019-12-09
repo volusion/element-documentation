@@ -10,7 +10,7 @@ you probably won't need it but you can add it if you want. Our sites use simple 
 
 ## CSS
 
-For CSS, we use `css-in-js` that plays nicely with React. You can read [here](../../how-to/style-a-block-with-aphrodite/README.md) how to use
+For CSS, we use `css-in-js` that plays nicely with React. You can read [here](/how-to/style-a-block-with-aphrodite/README.md) how to use
 this technique to styles your components.
 
 ## Element CLI
