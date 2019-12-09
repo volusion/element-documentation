@@ -38,6 +38,7 @@
 ## References
 
 * [Visual Guide to Proptypes](references/proptypes/README.md)
+* [Block Utils](references/block-utils/README.md)
 * [Volusion API ElementSdk Client Reference](references/sdk/README.md)
 * [Cart Events](references/cart-events/README.md)
 * [Element CLI](references/element-cli/README.md)

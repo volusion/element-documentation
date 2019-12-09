@@ -88,7 +88,7 @@ As an example, you could use query params to figure out which page of results th
 
 ```js
 export const getDataProps = (utils, props) => {
-    const queryParams = props.queryParams ? props.queryParams : {};
+    const { queryParams = {} } = props;
 
     const categoryId = 'something hard coded or from another API request';
     const page = Number(queryParams.page) || 1;
