@@ -34,11 +34,11 @@ For example, use `this.props.events.cart.addToCart`, not `"cart.addToCart"`.
 
 ## Events
 
-### addToCart
+### `addToCart`
 
 The cart subscribes to the `addToCart` event. You can publish it from your own blocks to add items to the cart.
 
-#### addToCart Usage
+#### `addToCart` Usage
 
 When publishing an `addToCart` event, you must provide an object as the second argument of the `publish` function with the following properties:
 
@@ -51,11 +51,11 @@ this.props.pubSub.publish(this.props.events.cart.addToCart, {
 });
 ```
 
-### itemAddedToCart
+### `itemAddedToCart`
 
 The cart publishes this event after the shopper adds an item to the cart. Your blocks can subscribe to it to see information about the item that the shopper added.
 
-#### itemAddedToCart Usage
+#### `itemAddedToCart` Usage
 
 ```js
 // subscribe to the event
@@ -79,11 +79,11 @@ The `data` provided by `itemAddedToCart` has the following shape:
 }
 ```
 
-### itemRemovedFromCart
+### `itemRemovedFromCart`
 
 The cart publishes this event after the shopper removes an item from the cart. Your blocks can subscribe to it to see information about the item that the shopper removed.
 
-#### itemRemovedFromCart Usage
+#### `itemRemovedFromCart Usage`
 
 ```js
 // subscribe to the event
@@ -107,11 +107,11 @@ The `data` provided by `itemRemovedFromCart` has the following shape:
 }
 ```
 
-### openAccountPanel
+### `openAccountPanel`
 
 The cart block subscribes to this event and your blocks can publish the event to open the account panel.
 
-#### openAccountPanel Usage
+#### `openAccountPanel` Usage
 
 No data is necessary when publishing this event.
 
@@ -119,11 +119,11 @@ No data is necessary when publishing this event.
 this.props.pubSub.publish(this.props.events.cart.openAccountPanel);
 ```
 
-### openCart
+### `openCart`
 
 The cart block subscribes to this event and your blocks can publish the event to open the cart panel.
 
-#### openCart Usage
+#### `openCart` Usage
 
 No data is necessary when publishing this event.
 
@@ -131,11 +131,11 @@ No data is necessary when publishing this event.
 this.props.pubSub.publish(this.props.events.cart.openCart);
 ```
 
-### updateCartCount
+### `updateCartCount`
 
 The cart publishes this event after the shopper updates the count of total items in the cart. Your blocks can subscribe to it to see the new quantity of items in the cart.
 
-#### updateCartCount Usage
+#### `updateCartCount` Usage
 
 ```js
 // subscribe to the event

@@ -22,7 +22,11 @@ Then run this command in your terminal:
 nvm install 8.11.3
 ```
 
-## 3. Install Element CLI
+## 3. Install Git
+
+If you don't have Git on your system, [follow the instructions here to install it](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+## 4. Install Element CLI
 
 To install [Element CLI](https://github.com/volusion/element-cli), run this command in your terminal:
 
@@ -30,11 +34,11 @@ To install [Element CLI](https://github.com/volusion/element-cli), run this comm
 npm install -g @volusion/element-cli
 ```
 
-## 4. Create an Account on [volusion.com](https://www.volusion.com/)
+## 5. Create an Account on [volusion.com](https://www.volusion.com/)
 
 If you don't have one already, go to [volusion.com](https://www.volusion.com/) to create an account.
 
-## 5. Log in to Element CLI
+## 6. Log in to Element CLI
 
 Run this command in your terminal:
 
@@ -44,14 +48,14 @@ element login
 
 Then, enter the email address and password for your Volusion account.
 
-## 6. Get Approved to Develop Blocks
+## 7. Get Approved to Develop Blocks
 
 You need approval from Volusion to begin developing blocks.
 
-TODO: link for instructions about becoming approved as a block developer
+For instructions, see the [guide for how to become approved as a block developer](/how-to/get-approved-to-develop-blocks/README.md).
 
-## 7. Start Developing
+## 8. Start Developing
 
 You're now ready to start developing blocks.
 
-TODO: link to block development tutorials
+A good next step would be to follow the [tutorial for building an element page with blocks](/tutorials/building-an-element-page/README.md).

@@ -1,15 +1,24 @@
 # Element CLI Reference
 
-This reference looks at the Element CLI commands and their options in detail. To learn more about using Element CLI, read [How to Keep Track of Your Block Versions](/how-to/track-block-versions).
+This reference looks at the [Element CLI](https://github.com/volusion/element-cli) commands and their options in detail. To learn more about using Element CLI, read [How to Keep Track of Your Block Versions](/how-to/track-block-versions).
 
 ## Table of Contents
 
+* [Installing](#installing-element-cli)
 * [Login](#login)
 * [New Block](#new-block)
 * [Publish](#publish)
 * [Update](#update)
 * [Rollback](#rollback)
 * [Release](#release)
+
+## Installing Element CLI
+
+To install Element CLI, run this command in your terminal:
+
+```shell
+npm install -g @volusion/element-cli
+```
 
 ## Commands
 
@@ -30,7 +39,7 @@ Creates a new starter block with the given block name. Always use the `-g` or `-
 #### New Block Usage
 
 ```shell
-element new --git BlockName
+element new BlockName --git
 ```
 
 #### New Block Options

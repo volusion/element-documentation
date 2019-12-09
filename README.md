@@ -9,6 +9,7 @@
 
 ## Tutorials
 
+* [Building an Element Page Tutorial](tutorials/building-an-element-page/README.md)
 * [Working with Element Proptypes Tutorial](tutorials/proptypes/README.md)
 
 ## How-to guides
