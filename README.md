@@ -6,6 +6,7 @@
 * [Element Concepts](explanations/element-concepts/README.md)
 * [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
 * [Block Versions](explanations/block-versions/README.md)
+* [Adding a Blog to Your Site](explanations/adding-a-blog/README.md)
 
 ## Tutorials
 
