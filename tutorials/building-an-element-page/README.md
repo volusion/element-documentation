@@ -392,7 +392,7 @@ Now that you've published your blocks, the next thing you'll want to do is creat
 
 In the web browser of your choice, sign in to [Volusion.com](https://www.volusion.com/login) with your approved developer account, and locate the link in the sidebar navigation for Site Designer:
 
-![Site Designer Link](siteDesignerLink.png)
+![Site Designer Link](/tutorials/siteDesignerLink.png)
 
 Click the link to proceed to Site Designer.
 
@@ -402,11 +402,11 @@ Look for the "Create new theme" link in Site Designer, and click on it.
 
 _Note: if Site Designer directed you straight to your active theme, first click the **"Change Theme"** link near the top of the screen (next to your theme name)_
 
-![Create New Theme Link](createNewThemeLink.png)
+![Create New Theme Link](/tutorials/createNewThemeLink.png)
 
 This will launch a dialog for you to enter your theme name:
 
-![Create New Theme Dialog](createNewThemeDialog.png)
+![Create New Theme Dialog](/tutorials/createNewThemeDialog.png)
 
 Enter "Blog Test Theme" as the name for your theme.
 
@@ -439,7 +439,7 @@ Site Designer will redirect you to your new Blog List page.
 
 You're on the blog list page, so start adding a block by clicking on the **Add Block** link:
 
-![Add Block](addBlockLink.png)
+![Add Block](/tutorials/addBlockLink.png)
 
 This will open the **Add a Block** panel, where you can select from block categories. Click on the **Misc** category. You'll recall this was the category you published your blocks into earlier.
 
