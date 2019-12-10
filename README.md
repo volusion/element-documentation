@@ -6,6 +6,7 @@
 * [Element Concepts](explanations/element-concepts/README.md)
 * [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
 * [Block Versions](explanations/block-versions/README.md)
+* [All the Tech You Need to Know to Develop on Element](explanations/all-the-tech-you-need/README.md)
 
 ## Tutorials
 
