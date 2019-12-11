@@ -43,7 +43,16 @@ It's also a good time to tag the release with a commit. To do so, run this comma
 git commit -am "Released a new major version"
 ```
 
-Your new major block version will be available to upgrade in Site Designer on a per-block basis. Any time the block is added to a theme from now on, it will automatically use the latest version.
+Your new major block version will be available to upgrade in Site Designer on a per-block basis. Any time the block is added to a theme from now on, it will automatically use the latest version. Each placement of the block will need to be upgraded (unless the block is a [reusable block](/how-to/reuse-a-block-across-pages/README.md)).
+
+### Switching Your Block to the New Version in Site Designer
+
+To upgrade a block in Site Designer to a new major version, do the following:
+
+1. View a page that shows the block.
+2. Begin editing the block to open the block's edit panel.
+3. Click the gear icon in the panel and select a new block version, or
+4. Click the callout that says that there's a new block version available.
 
 ## Further Reading
 
