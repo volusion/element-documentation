@@ -97,18 +97,18 @@ Now click the field underneath the "Theme Background Color" label.
 
 ![Color Picker](colorPicker.png)
 
-Replace the Hex value `FFFFFF` with `022b35`. Click on the sidebar somewhere outside of the color picker to apply your color change. Our page is simple, it will not use all the colors that we are setting here.
+Replace the Hex value `FFFFFF` with `022B35`. Click on the sidebar somewhere outside of the color picker to apply your color change. Our page is simple, it will not use all the colors that we are setting here.
 
 Continue through each of the color fields updating them with the following values:
 
 | Field                  | Hex    |
 | ---------------------- | ------ |
-| Theme Background Color | 022b35 |
+| Theme Background Color | 022B35 |
 | Primary Color          | C94C22 |
-| Secondary Color        | b4881d |
+| Secondary Color        | B4881D |
 | Body Text Color        | 667B82 |
 | Link Color             | 2D8CCF |
-| Link Hover Color       | 32a098 |
+| Link Hover Color       | 32A098 |
 | Sale Price Color       | DA3435 |
 
 ## Typography
@@ -143,8 +143,8 @@ Same as above, let's change some Hex values.
 | Field                 | Hex    |
 | --------------------- | ------ |
 | Logo                  | 6D73C1 |
-| Menu Links            | 2d8ccf |
-| Menu links hover      | 32a098 |
+| Menu Links            | 2D8CCF |
+| Menu links hover      | 32A098 |
 | Icons                 | 32A098 |
 | Cart count background | FDF6E4 |
 
@@ -163,7 +163,7 @@ One more bit of cleanup, let's find the switch labeled "Enable drop shadow" and 
 Scroll down to the footer block, hover over it and click on "Edit template". Scroll the sidebar down to Color and make the following updates:
 
 1. Change the "Background" and "Border" alpha transparency ("'A'" fields) to "`0`".
-2. Change the "Text" Hex to `93a1a1`.
+2. Change the "Text" Hex to `93A1A1`.
 
 ## Adding and Re-ordering Content
 
@@ -218,7 +218,9 @@ Here are a couple ways to get a look at what visitors to the site will see:
 
 ### 1. Browser Preview Mode
 
-Within Site Designer you can toggle the interface into a mobile preview mode, and then back to desktop, using these browser mode buttons: ![Browser Mode Buttons](browserModeButtons.png)
+Within Site Designer you can toggle the interface into a mobile preview mode, and then back to desktop, using these browser mode buttons:
+
+![Browser Mode Buttons](browserModeButtons.png)
 
 ### 2. Full Theme Preview
 
@@ -230,6 +232,6 @@ Preview as a stand-alone temporary shareable URL using this Preview button in th
 
 ## Color Switch
 
-One more thing! Open "Design Settings" and change "Theme Background Color" to `fdf6e4`. The entire feel of the site is transformed. That's one example of the benefit of controlling as much of the look and feel of your site from the global theme style as possible.
+One more thing! Open "Design Settings" and change "Theme Background Color" to `FDF6E4`. The entire feel of the site is transformed. That's one example of the benefit of controlling as much of the look and feel of your site from the global theme style as possible.
 
 ![Product Details Light Theme](productDetailsLightTheme.png)
