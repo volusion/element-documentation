@@ -101,41 +101,135 @@ Replace the Hex value `FFFFFF` with `022b35`. Click on the sidebar somewhere out
 
 Continue through each of the color fields updating them with the following values:
 
-| Field                  | HEX         |
-| ---------------------- | ----------- |
-| Theme Background Color | 022b35      |
-| ---------------------- | ----------- |
-| Primary Color          | C94C22      |
-| ---------------------- | ----------- |
-| Secondary Color        | b4881d      |
-| ---------------------- | ----------- |
-| Body Text Color        | 93A1A1      |
-| ---------------------- | ----------- |
-| Link Color             | 2D8CCF      |
-| ---------------------- | ----------- |
-| Link Hover Color       | 85981C      |
-| ---------------------- | ----------- |
-| Sale Price Color       | DA3435      |
-| ---------------------- | ----------- |
+| Field                  | Hex    |
+| ---------------------- | ------ |
+| Theme Background Color | 022b35 |
+| Primary Color          | C94C22 |
+| Secondary Color        | b4881d |
+| Body Text Color        | 667B82 |
+| Link Color             | 2D8CCF |
+| Link Hover Color       | 32a098 |
+| Sale Price Color       | DA3435 |
 
 ## Typography
 
-* Merriweather/Poppins
+Scroll the sidebar down to find the section on Typography.
+
+![Theme Style Typography](themeStyleTypography.png)
+
+Let's make some updates:
+
+1. Change the "Heading Font Family" to `Merriweather`.
+2. Change the "Base Font Family" to `Poppins`.
+3. Change the "Base Font Size" to `18px`.
+4. Change the "Line-height" to `1.6`.
 
 ## Fix the Header and Footer
 
-* edit header/footer to have transparent backgrounds
+At this point it's clear that the header and footer blocks are not playing along nicely. Let's get them in line.
 
-## Adding More Content
+### Header
 
-* A slideshow above the text block
-* Move the slideshow below the text
+Hover over the header block and click "Edit Template".
+
+![Edit Template](editTemplateButton.png)
+
+Scroll down to the color section:
+
+![Header Colors](headerColors.png)
+
+Same as above, let's change some Hex values.
+
+| Field                 | Hex    |
+| --------------------- | ------ |
+| Logo                  | 6D73C1 |
+| Menu Links            | 2d8ccf |
+| Menu links hover      | 32a098 |
+| Icons                 | 32A098 |
+| Cart count background | FDF6E4 |
+
+We skipped "Border" and "Background". Let's make them transparent to leverage our global design settings.
+
+Open up the color picker and set the field above the label "`A`" to "`0`". Do this for both the "Border" and "Background" fields.
+
+![Color Picker with Zero Alpha](colorPickerZeroAlpha.png)
+
+One more bit of cleanup, let's find the switch labeled "Enable drop shadow" and turn it off.
+
+![Enable drop shadow](dropShadowSwitch.png)
+
+### Footer
+
+Scroll down to the footer block, hover over it and click on "Edit template". Scroll the sidebar down to Color and make the following updates:
+
+1. Change the "Background" and "Border" alpha transparency ("'A'" fields) to "`0`".
+2. Change the "Text" Hex to `93a1a1`.
+
+## Adding and Re-ordering Content
+
+Let's add another block, and learn how to re-order blocks. Click the plus button above your text block and below the header.
+
+![Add Block](addBlockDarkBackground.png)
+
+Add the `Image Gallery > Slideshow` block.
+
+Move the slideshow down below your text block by hovering over the slideshow and finding the up/down arrows in the top-right corner. Click the down arrow.
+
+![Re-order Buttons](reorderButtons.png)
+
+Here's what we have so far. Your store name/logo, menu, and ipsum text will be different.
+
+![Theme Homepage](themeHomepage.png)
+
+## Product Details Page
+
+Our homepage is looking pretty good now. You might decide to come back later and put a `Misc > Divider` block between the text and the slideshow. It would be a good candidate for "`0`" alpha color.
+
+Now we need to review other pages on the site. For this tutorial we'll look at Product Details, because it's the most important page in on e-commerce site.
+
+Open the Page dropdown in the header and choose "Product Details".
+
+![Page Selection dropdown](/tutorials/pageDropdown.png)
+
+### Product Details Block
+
+Edit the "Product Details" block. Scroll the sidebar down to Colors:
+
+* Change the Background alpha transparency to "`0`".
+
+### Button Styles
+
+It's time to circle back to Design Settings and fix up the button styles now that we've found an "Add to Cart" button. Hit Design Settings in the header and scroll down to Components.
+
+![Primary Button Styles](themeStylePrimaryButton.png)
+
+Make the following color changes (we'll keep it simple, almost done here)
+
+| Field                  | Hex    |
+| ---------------------- | ------ |
+| Background Color       | DA3435 |
+| Hover Background Color | DA3435 |
+| Border Color           | DA3435 |
+| Hover Border Color     | DA3435 |
 
 ## Preview
 
-* Mobile preview within Site Designer (mobile/desktop icons)
-* Preview as a stand-alone temporary sharable URL (don't hit Publish, that will replace your live store)
+Here are a couple ways to get a look at what visitors to the site will see:
 
-## Other Pages
+### 1. Browser Preview Mode
 
-Our homepage is looking ok, now we need to review other pages on the site. For this tutorial we'll look at Product Details, because it's the most important page in on e-commerce site.
+Within Site Designer you can toggle the interface into a mobile preview mode, and then back to desktop, using these browser mode buttons: ![Browser Mode Buttons](browserModeButtons.png)
+
+### 2. Full Theme Preview
+
+Preview as a stand-alone temporary sharable URL using this Preview button in the header: 
+
+![Preview button](/tutorials/previewButton.png)
+
+(don't hit Publish, that will replace your live store)
+
+## Color Switch
+
+One more thing! Open "Design Settings" and change "Theme Background Color" to `fdf6e4`. The entire feel of the site is transformed. That's one example of the benefit of controlling as much of the look and feel of your site from the global theme style as possible.
+
+![Product Details Light Theme](productDetailsLightTheme.png)

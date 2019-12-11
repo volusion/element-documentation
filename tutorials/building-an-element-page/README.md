@@ -416,7 +416,7 @@ Then click the "Create" button.
 
 After creating your new theme, Site Designer will navigate you to the home page for your theme. Next you'll need to add a page where your blog list block will live. To do this, locate the page selection dropdown that says "Page: Home" and open it, revealing the "Add a Page" menu option:
 
-![Page Selection dropdown with Add a Page menu selection](addAPageLink.png)
+![Page Selection dropdown](/tutorials/pageDropdown.png)
 
 Click the "Add a Page" link, which will open a panel in the sidebar:
 
@@ -502,7 +502,7 @@ You're done setting up the blocks, and it's finally time to see how everything w
 
 Next, click the **Preview** button near the top of the Site Designer window:
 
-![Preview button](previewButton.png)
+![Preview button](/tutorials/previewButton.png)
 
 This will launch a new browser tab with your blog list page. The page url will be something like:
 
