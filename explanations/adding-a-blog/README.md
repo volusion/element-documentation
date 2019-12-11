@@ -13,8 +13,7 @@ Additionally, you are sacrificing SEO value by not having your blog hosted as a 
 
 But with Element you can do avoid all that. By creating a `/blog` page to your store and adding the appropriate blocks, you will be able to offer a first class
 experience to your users while reading your content. As a result of that, you can have another point to increase sales by embedding add to cart operations from
-your blog posts or any kind of actions that users can normally do from the store. Also you are reusing the same store's theme, reducing maintenance costs as
-exposed before.
+your blog posts or any kind of actions that users can normally do from the store. Also you are reusing the same store's theme, reducing maintenance costs.
 
 To see how easy you can add a blog, read our [Building an Element Page Tutorial](/tutorials/building-an-element-page/README.md) where all the steps are described from start to finish.
 
