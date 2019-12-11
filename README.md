@@ -11,7 +11,7 @@
 
 ## Tutorials
 
-* [Using the Site Designer](tutorials/site-designer/README.md)
+* [Using the Site Designer to Design a New Theme](tutorials/site-designer/README.md)
 * [Building an Element Page Tutorial](tutorials/building-an-element-page/README.md)
 * [Working with Element Proptypes Tutorial](tutorials/proptypes/README.md)
 

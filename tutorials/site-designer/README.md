@@ -1,4 +1,4 @@
-# Using the Site Designer
+# Using the Site Designer to Design a New Theme
 
 We're going to design a new theme that's different from the other available themes. We will do this without having to write any code.
 
