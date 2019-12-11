@@ -43,7 +43,7 @@ It's also a good time to tag the release with a commit. To do so, run this comma
 git commit -am "Released a new major version"
 ```
 
-Your new major block version will be available to install or upgrade.
+Your new major block version will be available to upgrade in Site Designer on a per-block basis. Any time the block is added to a theme from now on, it will automatically use the latest version.
 
 ## Further Reading
 
