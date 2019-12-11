@@ -1,6 +1,6 @@
 # Adding a Blog to Your Store
 
-Generally speaking when you want to incorporate a blog into your store, you will have to redirect your users to other domain (or subdomain) like `blog.mystore.com`.
+Generally speaking when you want to incorporate a blog into your store, you will have to redirect your users to some other domain (or subdomain) like `blog.mystore.com`.
 That means that your blog is hosted in a totally different platform and you have to invest time and money creating a similar look and feel for your blog.
 
 If you have invested in creating a nice header and footer for your store for example, you will have to create it again possibly in a totally different platform. Not to mention
