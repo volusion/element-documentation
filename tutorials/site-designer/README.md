@@ -6,7 +6,7 @@ Our theme will use the [Solarized](https://ethanschoonover.com/solarized/) color
 
 ## Create a New Theme to Work with
 
-First you will create a new theme to work with. This tutorial will not effect your live site as long as you do not publish this theme.
+First you will create a new theme to work with. This tutorial will not affect your live site as long as you do not publish this theme.
 
 ### 1. Open Site Designer
 
@@ -63,7 +63,7 @@ Now, go get some text that we can put in this page. Bacon Ipsum is popular, for 
 Generate 3 paragraphs of text. Now, you will want to copy that text and paste it without formatting. How to do this varies based on your operating system and browser. Here are a couple options:
 
 1. Many applications such as Google Chrome supports text stripping via Ctrl+Shift+V (Cmd+Shift+V on Mac), or...
-2. First paste the text into a plain text editor such as Notepad on Windows or TextEdit on Mac (in plain text mode, Command+Shift+T), then copy it again and past it into Site Designer.
+2. First paste the text into a plain text editor such as Notepad on Windows or TextEdit on Mac (in plain text mode, Command+Shift+T), then copy it again and paste it into Site Designer.
 
 Replace the "Heading" text with "Gothic Ipsum" and delete the Subheading.
 
@@ -77,7 +77,7 @@ This is easy to fix, and a good feature to learn. Select all the text of the fir
 
 Select **Normal** and the three paragraphs are now formatted the same way.
 
-**Tip:** it better to use this dropdown for text formatting than to manually adjust the font size, or make it bold to create a heading. This way you can change the styles of your headers on the entire website from one place, which we'll see later.
+**Tip:** it's better to use this dropdown for text formatting than to manually adjust the font size, or make it bold to create a heading. This way you can change the styles of your headers on the entire website from one place, which we'll see later.
 
 To finish editing this text, click the **Update** button in the bottom right.
 
@@ -185,7 +185,7 @@ Here's what we have so far. Your store name/logo, menu, and ipsum text will be d
 
 Our homepage is looking pretty good now. You might decide to come back later and put a `Misc > Divider` block between the text and the slideshow. It would be a good candidate for "`0`" alpha color.
 
-Now we need to review other pages on the site. For this tutorial we'll look at Product Details, because it's the most important page in on e-commerce site.
+Now we need to review other pages on the site. For this tutorial we'll look at Product Details, because it's the most important page in an e-commerce site.
 
 Open the Page dropdown in the header and choose "Product Details".
 
@@ -222,7 +222,7 @@ Within Site Designer you can toggle the interface into a mobile preview mode, an
 
 ### 2. Full Theme Preview
 
-Preview as a stand-alone temporary sharable URL using this Preview button in the header: 
+Preview as a stand-alone temporary shareable URL using this Preview button in the header: 
 
 ![Preview button](/tutorials/previewButton.png)
 
