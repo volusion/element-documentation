@@ -4,9 +4,10 @@
 
 * [What Is Element?](explanations/what-is-element/README.md)
 * [Element Concepts](explanations/element-concepts/README.md)
+* [All the Tech You Need to Know to Develop on Element](explanations/all-the-tech-you-need/README.md)
 * [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
 * [Block Versions](explanations/block-versions/README.md)
-* [All the Tech You Need to Know to Develop on Element](explanations/all-the-tech-you-need/README.md)
+* [Adding a Blog to Your Site](explanations/adding-a-blog/README.md)
 
 ## Tutorials
 
