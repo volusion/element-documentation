@@ -165,13 +165,15 @@ utils.client.menus.get()
             "id": "",
             "items": [],
             "name": "",
-            "slug": "",
-            "type": ""
+            "url": "https://",
+            "type": "link"
         }],
         "updatedOn": "" // iso date string
     }]
 }
 ```
+
+**Note:** menu item will have a `url` if it is of `type` `"link"`, otherwise it will have a slug.
 
 ### Products
 
