@@ -1,6 +1,6 @@
-# How to Release an Opt-In New Version of Your Block
+# How to Release a New Major (Opt-In) Version of Your Block
 
-In this how-to guide, you'll learn how to release a new opt-in (major) version of your block that your block users will need to manually upgrade to. This is often necessary when you are introducing **breaking changes** to your block, such as changes to the block appearance, or changes to the block's config schema. You can also [release non-breaking block changes that automatically propagate to all your block users](/how-to/release-a-non-breaking-block-change/README.md).
+In this how-to guide, you'll learn how to release a new major (opt-in) version of your block that your block users will need to manually upgrade to. This is often necessary when you are introducing **breaking changes** to your block, such as changes to the block appearance, or changes to the block's config schema. You can also [release non-breaking block changes that automatically propagate to all your block users](/how-to/release-a-minor-block-change/README.md).
 
 ## Prerequisites
 
@@ -20,7 +20,7 @@ Make the code changes for your block.
 
 ## 3. Verify Your Changes in Staging
 
-Once you have made the changes in your block, you should release them to staging so that you can verify the block works as intended. To do that, go to your terminal and navigate to your block's home directory. Then type these commands:
+Once you have made the changes in your block, you should release them to staging so that you can verify the block works as intended. To do that, return to your terminal and the block's home directory. Then type these commands:
 
 ```shell
 npm run build
@@ -31,7 +31,7 @@ Your changes will now be available for you (and anyone in your development org) 
 
 ## 4. Release Your New Version
 
-When your changes are ready, you can release them by publishing a release. New major releases will instantly be available for your block users to manually upgrade, but they must take manual action to do so. In your terminal, run this command:
+When your changes are ready, you can make them available in Site Designer by publishing a release. New major releases will instantly be available for your block users to manually upgrade, but they must take manual action to do so. In your terminal, run this command:
 
 ```shell
 element release -n "Release note"

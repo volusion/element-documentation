@@ -12,7 +12,7 @@ You need to be certain that the changes you're making to your block are actually
 
 ### How Can You Tell?
 
-Look at this chart and determine what kind of changes you're making. If any of them are breaking changes, consider either only making the non-breaking changes, or [releasing the changes as an opt-in new version of your block](/how-to/release-an-opt-in-new-block-version/README.md).
+Look at this chart and determine what kind of changes you're making. If any of them are breaking changes, consider either only making the non-breaking changes, or [releasing the changes as an opt-in new version of your block](/how-to/release-a-new-major-block-version/README.md).
 
 | Breaking Changes                 | Non-Breaking Changes                        |
 | -------------------------------- | ------------------------------------------- |
