@@ -63,7 +63,9 @@ Function that includes an external javascript library.
 
 ```js
 utils.addScript(
-    'https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js'
+    'https://cdn.jsdelivr.net/algoliasearch/3/algoliasearchLite.min.js',
+    false, // optional boolean: include the defer attribute
+    false // optional boolean:  include the async attribute
 );
 ```
 

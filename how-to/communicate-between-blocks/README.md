@@ -55,7 +55,7 @@ At this point, you have a block that's sending messages, but you need to set up 
 
 ### Add a Subscription in Your Block's componentDidMount Function
 
-Locate the `componentDidMount` function of one of your receiver blocks. If this function doesn't exist yet, add it to your component. Then add a subscription:
+Locate the `componentDidMount` function of one of your receiver blocks. If this function doesn't exist yet, add it to your component. You may need to refactor the block to use class syntax. Then add a subscription:
 
 ```js
 componentDidMount() {
