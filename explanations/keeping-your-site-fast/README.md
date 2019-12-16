@@ -34,7 +34,7 @@ constructor() {
 
 ## Make Sure Your Dependencies Are Bundled Once
 
-Related to the previous advice, if you have five blocks in your page, and you install on each of them the `lodash` library, you will
+Related to the previous advice, if you have five blocks in your page, and each one has the `lodash` library installed, you will
 be bundling that library five times. Instead, follow the advice presented previously and add the `lodash` dependency once as a script
 in the head of the html.
 
