@@ -8,6 +8,7 @@
 * [E-commerce Theme Pages](explanations/e-commerce-pages/README.md)
 * [Block Versions](explanations/block-versions/README.md)
 * [Adding a Blog to Your Site](explanations/adding-a-blog/README.md)
+* [Keeping Your Site Fast](explanations/keeping-your-site-fast/README.md)
 
 ## Tutorials
 
