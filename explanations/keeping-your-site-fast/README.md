@@ -5,7 +5,7 @@ indicators in the green. The fastest experience possible will please your users 
 
 ## Reduce the Number of Requests Performed in the Server
 
-If you need to fetch data in the server side render phase for SEO purposes, think which data you really need in first
+If you need to fetch data in the server side render phase for SEO purposes, think about which data you really need in first
 paint and delay the information that can be fetched in the client. For example, in a product details page, we can
 fetch the product data in the server but delay the cart data to be fetched in the client, as there is no value on server
 side rendering the cart.
