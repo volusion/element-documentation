@@ -24,7 +24,7 @@ One of the easiest ways to explode your block size is by adding dependencies. Fo
 library, use the individual functions packages and install as needed.
 
 Additionally, if you are using a package that will be used exclusively in the client like an input validation library, consider
-adding the script in the head tag instead of adding those extra KB to the block bundle. This is how you can do it:
+adding the script in the head tag instead of adding those extra KB to the block bundle. Example:
 
 ```js
 constructor() {
