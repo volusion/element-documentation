@@ -38,7 +38,7 @@ Related to the previous advice, if you have five blocks in your page, and each o
 be bundling that library five times. Instead, follow the advice presented previously and add the `lodash` dependency once as a script
 in the head of the html.
 
-In case you are unsure, installing a dependency means running `npm install dep_name` and then, importing your dependency in your block code.
+In case you are unsure, installing a dependency means running `npm install dep_name` and then importing your dependency in your block code.
 
 ## Keep Your CSS simple
 
