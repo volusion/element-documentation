@@ -7,7 +7,7 @@ indicators in the green. The fastest experience possible will please your users 
 
 If you need to fetch data in the server side render phase for SEO purposes, think about which data you really need in first
 paint and delay the information that can be fetched in the client. For example, in a product details page, we can
-fetch the product data in the server but delay the cart data to be fetched in the client, as there is no value on server
+fetch the product data in the server but delay the cart data to be fetched in the client, as there is no value in server
 side rendering the cart.
 
 Remember that the `componentDidMount` lifecycle method only runs in the browser. It is safe to make any browser requests
