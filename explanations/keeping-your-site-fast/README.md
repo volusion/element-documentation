@@ -47,7 +47,7 @@ Keeping your CSS simple is another way of creating fast sites. This will also he
 ## Avoid SetTimeouts and Blocking Operations
 
 Make sure your timeouts are not run in the server as it will slow down and block your requests. Feel free to use timeouts but only after
-the block is hydrated in the client. A rule of thumb is avoiding those operations in the `getDataProps` function and on block constructor.
+the block is hydrated in the client. A rule of thumb is avoiding those operations in the `getDataProps` function and in the block constructor.
 
 ## Evaluate the Impact of Third Party Scripts
 
