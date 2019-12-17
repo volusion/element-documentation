@@ -21,7 +21,11 @@ Always fetch your data in parallel and avoid sequential data fetches if you can.
 ## Keep Your Block Size Small
 
 One of the easiest ways to explode your block size is by adding dependencies. For example, instead of adding the entire `lodash`
-library, use the individual functions packages and install as needed.
+library, use the individual functions packages and install as needed. Example:
+
+```js
+import isEqual from "lodash/isEqual";
+```
 
 Additionally, if you are using a package that will be used exclusively in the client like an input validation library, consider
 adding the script in the head tag instead of adding those extra KB to the block bundle. Example:
