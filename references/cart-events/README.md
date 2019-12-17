@@ -160,7 +160,7 @@ this.props.pubSub.publish(this.props.events.cart.openCart);
 
 ### `replyWithLoaded`
 
-The cart publishes this event after it has loaded and received an `askIfLoaded` event. Your blocks can subscribe to `replyWithLoaded` to trigger an action after the cart has loaded, like adding an item to the cart. You wouldn't want to do this before the cart had loaded.
+The cart publishes this event after it has loaded and received an `askIfLoaded` event. Your blocks can subscribe to `replyWithLoaded` to trigger an action after the cart has loaded, like immediately adding an item to the cart through queryParams.
 
 ```js
 // subscribe to the event
