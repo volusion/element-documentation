@@ -42,7 +42,7 @@ Your block may want to publish an event to the cart. This can allow you to add a
 
 ### Ensuring That the Cart Is Loaded
 
-Before you publish any events to the cart, you be aware that under some circumstances, the cart may not have loaded yet. In that case, you may want to listen for the `cart.isLoaded` event before you publish an event to the cart:
+Before you publish any events to the cart, you should be aware that under some circumstances, the cart may not have loaded yet. For example, if you are adding something to the cart based on a query string parameter, not a user interaction. In that case, you may want to listen for the `cart.isLoaded` event before you publish an event to the cart:
 
 ```js
 // subscribe to the event
