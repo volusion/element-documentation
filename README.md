@@ -35,6 +35,7 @@
 * [Preview Block Changes without Affecting Your Block Users](how-to/preview-block-changes/README.md)
 * [Release a Minor (Non-Breaking) Change to All Your Block Users](/how-to/release-a-minor-block-change/README.md)
 * [Release a New Major (Opt-In) Version of Your Block](how-to/release-a-new-major-block-version/README.md)
+* [Rollback a Block Change](how-to/rollback-a-block-change/README.md)
 
 ### Site Designer How-to's
 
