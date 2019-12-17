@@ -36,7 +36,7 @@ constructor() {
 
 Related to the previous advice, if you have five blocks in your page, and each one has the `lodash` library installed, you will
 be bundling that library five times. Instead, follow the advice presented previously and add the `lodash` dependency once as a script
-in the head of the html.
+in the head of the html. If multiple blocks load the same script, Element is smart enough to only load it once.
 
 In case you are unsure, installing a dependency means running `npm install dep_name` and then importing your dependency in your block code.
 
