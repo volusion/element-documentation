@@ -40,6 +40,20 @@ handleItemAdded = (msg, itemData) => {
 
 Your block may want to publish an event to the cart. This can allow you to add an item, update an item count, or open the cart panel. In this example, we'll add an item to the cart.
 
+### Ensuring That the Cart Is Loaded
+
+Before you publish any events to the cart, you be aware that under some circumstances, the cart may not have loaded yet. In that case, you may want to listen for the `cart.isLoaded` event before you publish an event to the cart:
+
+```js
+// subscribe to the event
+this.props.pubSub.subscribe(this.props.events.cart.isLoaded, this.handleCartLoaded);
+
+// define a handler function that will run after the cart loads
+handleCartLoaded = (msg, data) => {
+    // the cart has loaded and you can now interact with it
+}
+```
+
 ### Add a Function to Send Your Message
 
 Send your message using `utils.pubSub.publish()` in your block. This function takes two arguments:

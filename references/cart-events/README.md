@@ -6,6 +6,7 @@ The Element SDK provides topic names for standard cart events. Blocks can subscr
 
 * [Event Definitions](#event-definitions)
 * [addToCart](#addToCart) - publish to add an item to the cart
+* [isLoaded](#isLoaded) - subscribe to act when the cart loads
 * [itemAddedToCart](#itemAddedToCart) - subscribe to get info about an item added to the cart
 * [itemRemovedFromCart](#itemRemovedFromCart) - subscribe to get info about an item removed from the cart
 * [openAccountPanel](#openAccountPanel) - publish to open the account panel
@@ -20,6 +21,7 @@ The Element SDK provides topic names for standard cart events. Blocks can subscr
 ```js
 {
     addToCart: "cart.addToCart",
+    isLoaded: "cart.isLoaded",
     itemAddedToCart: "cart.itemAddedToCart",
     itemRemovedFromCart: "cart.itemRemovedFromCart",
     openAccountPanel: "cart.openAccountPanel",
@@ -50,6 +52,24 @@ this.props.pubSub.publish(this.props.events.cart.addToCart, {
     itemPrice // type: float, from product data, ex: 4.99
 });
 ```
+
+### `isLoaded`
+
+The cart publishes this event after the cart loads. Your blocks can subscribe to it to trigger an action after the cart has loaded, like adding an item to the cart. You wouldn't want to do this before the cart had loaded.
+
+### `isLoaded` Usage
+
+```js
+// subscribe to the event
+this.props.pubSub.subscribe(this.props.events.cart.isLoaded, this.handleCartLoaded);
+
+// define a handler function that will run after the cart loads
+handleCartLoaded = (msg, data) => {
+    // the cart has loaded and you can now interact with it
+}
+```
+
+The `data` provided by `isCartLoaded` is `null`.
 
 ### `itemAddedToCart`
 
