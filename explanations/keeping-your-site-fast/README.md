@@ -1,7 +1,7 @@
 # Keeping Your Site Fast
 
 As you may already know, Element is optimized for speed. By following the advice in this document, you can keep your speed
-indicators in the green. The fastest experience possible will please your users and your earnings.
+indicators in the green. The fastest experience possible will please your users and increase your earnings.
 
 ## Reduce the Number of Requests Performed in the Server
 
