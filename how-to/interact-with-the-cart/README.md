@@ -42,11 +42,16 @@ Your block may want to publish an event to the cart. This can allow you to add a
 
 ### Ensuring That the Cart Is Loaded
 
-Before you publish any events to the cart, you should be aware that under some circumstances, the cart may not have loaded yet. For example, if you are adding something to the cart based on a query string parameter, not a user interaction. In that case, you may want to listen for the `cart.isLoaded` event before you publish an event to the cart:
+Before you publish any events to the cart, you should be aware that under some circumstances, the cart may not have loaded yet. For example, if you are adding something to the cart based on a query string parameter, not a user interaction. In that case, you may want to verify that the cart is loaded before you publish an event to the cart:
 
 ```js
-// subscribe to the event
-this.props.pubSub.subscribe(this.props.events.cart.isLoaded, this.handleCartLoaded);
+// you can use this function to ask the cart if it's loaded yet.
+// you can also run this function on an interval until the cart responds.
+this.props.pubSub.publish(this.props.events.cart.askIfLoaded, {});
+
+// the cart will respond to the cart.askIfLoaded event by publishing a cart.replyWithLoaded event.
+// You can subscribe to like so:
+this.props.pubSub.subscribe(this.props.events.cart.replyWithLoaded, this.handleCartLoaded);
 
 // define a handler function that will run after the cart loads
 handleCartLoaded = (msg, data) => {
