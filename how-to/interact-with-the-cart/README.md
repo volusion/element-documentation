@@ -47,7 +47,7 @@ Before you publish any events to the cart, you should be aware that under some c
 ```js
 // you can use this function to ask the cart if it's loaded yet.
 // you can also run this function on an interval until the cart responds.
-this.props.pubSub.publish(this.props.events.cart.askIfLoaded, {});
+this.props.pubSub.publish(this.props.events.cart.askIfLoaded);
 
 // the cart will respond to the cart.askIfLoaded event by publishing a cart.replyWithLoaded event.
 // You can subscribe to like so:
