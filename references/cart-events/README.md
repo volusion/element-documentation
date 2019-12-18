@@ -63,7 +63,7 @@ The cart subscribes to the `askIfLoaded` event. You can publish it from your own
 
 ```js
 // publish the event
-this.props.pubSub.publish(this.props.events.cart.askIfLoaded, {});
+this.props.pubSub.publish(this.props.events.cart.askIfLoaded);
 ```
 
 ### `itemAddedToCart`
