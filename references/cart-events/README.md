@@ -6,14 +6,12 @@ The Element SDK provides topic names for standard cart events. Blocks can subscr
 
 * [Event Definitions](#event-definitions)
 * [addToCart](#addToCart) - publish to add an item to the cart
-* [askForTotalItems](#askForTotalItems) - publish to ask the cart for a total items count
 * [askIfLoaded](#askIfLoaded) - publish to ask the cart if it's loaded yet
 * [itemAddedToCart](#itemAddedToCart) - subscribe to get info about an item added to the cart
 * [itemRemovedFromCart](#itemRemovedFromCart) - subscribe to get info about an item removed from the cart
 * [openAccountPanel](#openAccountPanel) - publish to open the account panel
 * [openCart](#openCart) - publish to open the cart panel
 * [replyWithLoaded](#replyWithLoaded) - subscribe to react to the cart loading
-* [replyWithTotalItems](#replyWithLoaded) - subscribe to get the total cart items
 * [updateCartCount](#updateCartCount) - subscribe to get the updated cart quantity
 * [Additional Reading](#additional-reading)
 
@@ -24,11 +22,12 @@ The Element SDK provides topic names for standard cart events. Blocks can subscr
 ```js
 {
     addToCart: "cart.addToCart",
-    isLoaded: "cart.isLoaded",
+    askIfLoaded: "cart.askIfLoaded",
     itemAddedToCart: "cart.itemAddedToCart",
     itemRemovedFromCart: "cart.itemRemovedFromCart",
     openAccountPanel: "cart.openAccountPanel",
     openCart: "cart.openCart",
+    replyWithLoaded: "cart.replyWithLoaded",
     updateCartCount: "cart.updateCartCount",
 }
 ```
@@ -54,17 +53,6 @@ this.props.pubSub.publish(this.props.events.cart.addToCart, {
     variantId, // type: string, from product data
     itemPrice // type: float, from product data, ex: 4.99
 });
-```
-
-### `askForTotalItems`
-
-The cart subscribes to the `askForTotalItems` event. You can publish it from your own blocks to request a reply with the total cart items. You may want to execute this function on an interval until you receive a reply. See [replyWithTotalItems](#replyWithTotalItems) for information about the reply.
-
-### `askForTotalItems` Usage
-
-```js
-// publish the event
-this.props.pubSub.publish(this.props.events.cart.askForTotalItems, {});
 ```
 
 ### `askIfLoaded`
@@ -179,22 +167,6 @@ The `data` provided by `replyWithLoaded` has the following shape:
     totalItems // int, the number of items in the cart
 }
 ```
-
-### `replyWithTotalItems`
-
-The cart publishes this event after it has loaded and received an `askForTotalItems` event. Your blocks can subscribe to `replyWithTotalItems` to get the total items count.
-
-```js
-// subscribe to the event
-this.props.pubSub.subscribe(this.props.events.cart.replyWithTotalItems, this.handleCartTotalItems);
-
-// define a handler function to do something with the total items
-handleCartTotalItems = (msg, data) => {
-    // you can now use msg and data
-}
-```
-
-The `data` provided by `replyWithTotalItems` is an int that corresponds to the number of total items in the cart.
 
 ### `updateCartCount`
 
