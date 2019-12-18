@@ -1,6 +1,6 @@
 # How To Rollback a Block Change
 
-If you published a minor change and for some reason you want to roll it back, here is how you can do it.
+If you published a minor change (major changes cannot be rolled back) and for some reason you want to roll it back, here is how you can do it.
 
 We will assume that you released a change that was not supposed to reach production yet. Something like this:
 
