@@ -8,7 +8,7 @@ We will assume that you released a change that was not supposed to reach product
 element release -n "a release"
 ```
 
-## 1. Checkout Your Repo to the Previous Minor Release Commit
+## 1. Checkout Your Repo to the Previous Minor Release Commit (Optional)
 
 As we recommended in the [how to track block versions document](../track-block-versions), it is a good practice to commit every time
 you release a version. The first step is to locate the last commit you released and checkout your repo to use that commit:
@@ -30,7 +30,7 @@ At this point, your block users will get the previous released version. The vers
 If you had multiple minor releases linked to the major release, every `rollback` command will jump back one release until reaching the major.
 The major version cannot be rolled back.
 
-## 3. Fix the Error That Generated The Rollback
+## 3. Fix the Error That Generated The Rollback (Optional)
 
 If you want to fix the issue, just fix it and release again if needed. Remember to commit the new release.
 
