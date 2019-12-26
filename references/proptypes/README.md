@@ -2,42 +2,30 @@
 
 ## Table of Contents
 
-* [number](#number)
-* [bool](#bool)
-* [string](#string)
-* [color](#color)
-* [product](#product)
-* [category](#category)
-* [sectionHeader](#sectionheader)
-* [image](#image)
-* [slider](#slider)
-* [editorFull](#editorfull)
-* [editorMinimal](#editorminimal)
-* [readOnly](#readonly)
-* [oneOf](#oneof)
-* [arrayOf shape](#arrayof-shape)
-* [embeddable](#embeddable)
-* [Private Properties](#private-properties)
-* [Further Reading](#further-reading)
+* Data
+  * [bool](#bool)
+  * [category](#category)
+  * [color](#color)
+  * [editorFull](#editorfull)
+  * [editorMinimal](#editorminimal)
+  * [embeddable](#embeddable)
+  * [image](#image)
+  * [number](#number)
+  * [oneOf](#oneof)
+  * [product](#product)
+  * [slider](#slider)
+  * [string](#string)
+* Meta / Organization
+  * [arrayOf shape](#arrayof-shape)
+  * [isPrivate](#isPrivate)
+  * [readOnly](#readonly)
+  * [sectionHeader](#sectionheader)
+* More
+  * [Further Reading](#further-reading)
 
-## number
+## Data
 
-![Number: 42](proptype-number.png)
-
-```js
-number: {
-    label: 'Number',
-    type: ElementPropTypes.number
-}
-```
-
-```js
-export const defaultConfig = {
-    number: 42,
-};
-```
-
-## bool
+### bool
 
 ![Boolean: true](proptype-bool.png)
 
@@ -54,24 +42,20 @@ export const defaultConfig = {
 };
 ```
 
-## string
+### category
 
-![String: Default string](proptype-string.png)
+![Category](proptype-category.png)
 
 ```js
-string: {
-    label: 'String',
-    type: ElementPropTypes.string
+category: {
+    label: 'Category',
+    type: ElementPropTypes.category
 }
 ```
 
-```js
-export const defaultConfig = {
-    string: 'Default string',
-};
-```
+In the block, `props.category` will be the ID of the category selected by the merchant.
 
-## color
+### color
 
 ![Color: purple](proptype-color.png)
 
@@ -90,49 +74,70 @@ export const defaultConfig = {
 
 **Note:** merchant edits to color fields will are stored in RGBA format.
 
-## product
+### editorFull
 
-![Product](proptype-product.png)
-
-```js
-product: {
-    label: 'Product',
-    type: ElementPropTypes.product
-}
-```
-
-In the block, `props.product` will be the ID of the product selected by the merchant.
-
-## category
-
-![Category](proptype-category.png)
+![Editor Full](proptype-editor-full.png)
 
 ```js
-category: {
-    label: 'Category',
-    type: ElementPropTypes.category
-}
-```
-
-In the block, `props.category` will be the ID of the category selected by the merchant.
-
-## sectionHeader
-
-![Section Header](proptype-section-header.png)
-
-```js
-sectionHeader: {
-    type: ElementPropTypes.sectionHeader
+editorFull: {
+    label: 'Editor Full',
+    type: ElementPropTypes.editorFull
 }
 ```
 
 ```js
 export const defaultConfig = {
-    sectionHeader: 'Section Header'
+    editorFull: '<h1>Full WYSIWYG</h1>'
 };
 ```
 
-## image
+![Editor Full](editor-full.png)
+
+### editorMinimal
+
+![Editor Minimal](proptype-editor-minimal.png)
+
+```js
+editorMinimal: {
+    label: 'Editor Minimal',
+    type: ElementPropTypes.editorMinimal
+}
+```
+
+```js
+export const defaultConfig = {
+    editorMinimal: '<p>Minimal text editor&#8230;</p>'
+};
+```
+
+![Editor Minimal](editor-minimal.png)
+
+### embeddable
+
+![Embeddable](proptype-embeddable.png)
+
+```js
+embeddable: {
+    label: 'Embeddable Iframe',
+    type: ElementPropTypes.embeddable({
+        embedType: ElementPropTypes.string,
+        url: ElementPropTypes.string,
+        height: ElementPropTypes.number
+    })
+}
+```
+
+```js
+export const defaultConfig = {
+    embeddable: {
+        embedType: 'iframe', // the only supported value
+        url: 'https://www.volusion.com/login',
+        height: 150
+    }
+};
+```
+
+### image
 
 ![Image: empty default](proptype-image.png)
 
@@ -174,7 +179,70 @@ export const defaultConfig = {
 
 ![Image Picker](image-picker.png)
 
-## slider
+### number
+
+![Number: 42](proptype-number.png)
+
+```js
+number: {
+    label: 'Number',
+    type: ElementPropTypes.number
+}
+```
+
+```js
+export const defaultConfig = {
+    number: 42,
+};
+```
+
+### oneOf
+
+![oneOf](proptype-one-of.png)
+
+```js
+oneOf: {
+    label: 'Dropdown',
+    type: ElementPropTypes.oneOf(['News', 'Photos'])
+}
+```
+
+```js
+export const defaultConfig = {
+    oneOf: 'News'
+};
+```
+
+```js
+export const defaultConfig = {
+    arrayOfShapes: []
+};
+
+// or pre-populated
+export const defaultConfig = {
+    arrayOfShapes: [
+        {
+            text: 'Link',
+            url: 'https://'
+        }
+    ]
+};
+```
+
+### product
+
+![Product](proptype-product.png)
+
+```js
+product: {
+    label: 'Product',
+    type: ElementPropTypes.product
+}
+```
+
+In the block, `props.product` will be the ID of the product selected by the merchant.
+
+### slider
 
 ![Slider: options](proptype-slider.png)
 
@@ -202,79 +270,26 @@ export const defaultConfig = {
 };
 ```
 
-## editorFull
+### string
 
-![Editor Full](proptype-editor-full.png)
+![String: Default string](proptype-string.png)
 
 ```js
-editorFull: {
-    label: 'Editor Full',
-    type: ElementPropTypes.editorFull
+string: {
+    label: 'String',
+    type: ElementPropTypes.string
 }
 ```
 
 ```js
 export const defaultConfig = {
-    editorFull: '<h1>Full WYSIWYG</h1>'
+    string: 'Default string',
 };
 ```
 
-![Editor Full](editor-full.png)
+## Meta / Organization
 
-## editorMinimal
-
-![Editor Minimal](proptype-editor-minimal.png)
-
-```js
-editorMinimal: {
-    label: 'Editor Minimal',
-    type: ElementPropTypes.editorMinimal
-}
-```
-
-```js
-export const defaultConfig = {
-    editorMinimal: '<p>Minimal text editor&#8230;</p>'
-};
-```
-
-![Editor Minimal](editor-minimal.png)
-
-## readOnly
-
-![Read-only](proptype-read-only.png)
-
-```js
-readOnly: {
-    label: '',
-    type: ElementPropTypes.readOnly
-}
-```
-
-```js
-export const defaultConfig = {
-    readOnly: 'Read-only text.' // use for instructions, help text
-};
-```
-
-## oneOf
-
-![oneOf](proptype-one-of.png)
-
-```js
-oneOf: {
-    label: 'Dropdown',
-    type: ElementPropTypes.oneOf(['News', 'Photos'])
-}
-```
-
-```js
-export const defaultConfig = {
-    oneOf: 'News'
-};
-```
-
-## arrayOf shape
+### arrayOf shape
 
 ![arrayOf Shape](proptype-array-of-shape.png)
 
@@ -296,48 +311,7 @@ arrayOfShapes: {
 }
 ```
 
-```js
-export const defaultConfig = {
-    arrayOfShapes: []
-};
-
-// or pre-populated
-export const defaultConfig = {
-    arrayOfShapes: [
-        {
-            text: 'Link',
-            url: 'https://'
-        }
-    ]
-};
-```
-
-## embeddable
-
-![Embeddable](proptype-embeddable.png)
-
-```js
-embeddable: {
-    label: 'Embeddable Iframe',
-    type: ElementPropTypes.embeddable({
-        embedType: ElementPropTypes.string,
-        url: ElementPropTypes.string,
-        height: ElementPropTypes.number
-    })
-}
-```
-
-```js
-export const defaultConfig = {
-    embeddable: {
-        embedType: 'iframe', // the only supported value
-        url: 'https://www.volusion.com/login',
-        height: 150
-    }
-};
-```
-
-## Private Properties
+### isPrivate
 
 The `isPrivate` property set to true hides a field from merchants. Agency accounts will still be able to see it.
 
@@ -349,7 +323,42 @@ string: {
 }
 ```
 
-## Further reading
+### readOnly
+
+![Read-only](proptype-read-only.png)
+
+```js
+readOnly: {
+    label: '',
+    type: ElementPropTypes.readOnly
+}
+```
+
+```js
+export const defaultConfig = {
+    readOnly: 'Read-only text.' // use for instructions, help text
+};
+```
+
+## sectionHeader
+
+![Section Header](proptype-section-header.png)
+
+```js
+sectionHeader: {
+    type: ElementPropTypes.sectionHeader
+}
+```
+
+```js
+export const defaultConfig = {
+    sectionHeader: 'Section Header'
+};
+```
+
+## More
+
+### Further reading
 
 * [Working with Element Proptypes Tutorial](/tutorials/proptypes/README.md)
 * [How to: Add Element Proptypes to a Block](/how-to/proptypes/README.md)
