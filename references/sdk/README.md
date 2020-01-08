@@ -41,6 +41,7 @@ window.ElementSdk.client.categories.get()
   * [`products.getRelatedBySlug()`](#productsgetrelatedbyslug)
   * [`products.getByCategoryId()`](#productsgetbycategoryid)
   * [`products.getWithChildCategories()`](#productsgetwithchildcategories)
+  * [`products.search()`](#productssearch)
 * [Request](#request)
 * [Store Information](#store-information)
   * [`storeInformation`](#storeinformation)
@@ -359,9 +360,12 @@ utils.client.products.getByCategoryId({
     categoryId: 'category123',
     page: 1, // one based
     pageSize: 20,
+    offset: 0, // alternative to page, uses pageSize, but not calculated based on it
     sort: 'name a-z' // See Product Sort Options at the bottom of this document.
 })
 ```
+
+Note: `page` will be used if both `page` and `offset` are present.
 
 #### Response
 
@@ -444,6 +448,93 @@ utils.client.products.getWithChildCategories('category123', categoryTree)
     'category123',
     'category123-subcategory'
 ]
+```
+
+#### `products.search()`
+
+An asynchronous method that returns a Promise that resolves with an array with products matching the given query, as well as pagination data
+
+#### Usage
+
+```js
+utils.client.products.search({
+    query: "Test", // required
+    page: 1, // one-based, calculated based on pageSize
+    pageSize: 20,
+    offset: 0, // alternative to page, uses pageSize, but not calculated based on it
+    sort: "newest" // see Product Sort Options at the bottom of this document
+});
+```
+
+Note: `page` will be used if both `page` and `offset` are present.
+
+#### Response
+
+```js
+{
+    currentPage: 1,
+    totalItems: 2,
+    totalPages: 1,
+    items: [
+        {
+            "availability": {
+                "preOrder": {
+                    "enabled": false
+                }
+            },
+            "categoryIds": [""],
+            "description": "",
+            "id": "",
+            "images": [],
+            "listPrice": 1,
+            "name": "Test Product",
+            "price": 1,
+            "productVariants": [{
+                "id": "",
+                "images": [],
+                "isInventoryTracked": false,
+                "price": 1,
+                "quantity": 0,
+                "sku": "",
+                "variants": []
+            }],
+            "relatedProductIds": [],
+            "seo_friendlyName": "",
+            "seo_metaDescription": "",
+            "seo_title": "",
+            "sku": "",
+            "variantOptions": []
+        }, {
+            "availability": {
+                "preOrder": {
+                    "enabled": false
+                }
+            },
+            "categoryIds": [""],
+            "description": "",
+            "id": "",
+            "images": [],
+            "listPrice": 1,
+            "name": "Product Test",
+            "price": 1,
+            "productVariants": [{
+                "id": "",
+                "images": [],
+                "isInventoryTracked": false,
+                "price": 1,
+                "quantity": 0,
+                "sku": "",
+                "variants": []
+            }],
+            "relatedProductIds": [],
+            "seo_friendlyName": "",
+            "seo_metaDescription": "",
+            "seo_title": "",
+            "sku": "",
+            "variantOptions": []
+        }
+    ]
+}
 ```
 
 ### Request
