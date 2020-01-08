@@ -10,7 +10,6 @@ In production block code, the most common place that you'll be using the SDK is 
 export const getDataProps = (utils, { productSlug }) => {
     return utils.client.products
         .getBySlug(productSlug)
-        .then(product => { product })
         .catch(() => {});
 };
 ```
@@ -32,7 +31,7 @@ window.ElementSdk.client.categories.get()
 * [Categories](#categories)
   * [`categories.get()`](#categoriesget)
 * [Content Pages](#content-pages)
-  * [`contentPages.getBySeoFriendlyName()`](#contentPagesgetbyseofriendlyname)
+  * [`contentPages.getBySeoFriendlyName()`](#contentpagesgetbyseofriendlyname)
 * [Menus](#menus)
   * [`menus.get()`](#menusget)
 * [Products](#products)

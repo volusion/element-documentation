@@ -2,6 +2,14 @@
 
 This tutorial will cover creating new pages in Element, and the creation of custom blocks that you will put into those new pages.
 
+## Quick Start
+
+If you have built a block before, you can skip down to [Make the Block Fetch Data from an API](#5-make-the-block-fetch-data-from-an-api) after running this command from the directory where you keep your blocks:
+
+```shell
+element new Bloglist --git && cd Bloglist && npm install && npm start
+```
+
 ## Prerequisites
 
 Before you get started, you need to ensure that your development environment is ready for you to explore Site Designer and create your own blocks.
@@ -79,7 +87,7 @@ npm start
 
 You should notice a browser tab open up with the url set to `http://localhost:4000/`, and the browser contents should look something like this:
 
-![Starter Block contents in browser](browserStarterBlock.png)
+![Starter Block contents in browser](/tutorials/browserStarterBlock.png)
 
 Congratulations! Your block is running locally and is ready for some changes. If this process did not start up a browser tab for your automatically, open a browser tab to `http://localhost:4000/`.
 
@@ -302,11 +310,6 @@ export const getConfigSchema = ElementPropTypes => {
         text: {
             label: 'Text content',
             type: ElementPropTypes.string
-        },
-        blogId: {
-            label: 'Blog Identifier',
-            type: ElementPropTypes.readOnly,
-            isPrivate: true
         }
     };
 };
@@ -480,7 +483,7 @@ Site Designer will redirect you to your new Blog Detail page.
 
 You're on the blog detail page, so start adding a block by clicking on the **Add Block** link:
 
-![Add Block](addBlockLink.png)
+![Add Block](/tutorials/addBlockLink.png)
 
 This will open the **Add a Block** panel, where you can select from block categories. Click on the **Misc** category. You'll recall this was the category you published your blocks into earlier.
 

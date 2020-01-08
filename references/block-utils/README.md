@@ -111,7 +111,7 @@ if (utils.isAmpRequest) {
 
 ### `isRendering`
 
-Boolean property that is `true` when the block is rendered by the live store, or a preview of a theme, and `undefined` otherwise, for instance in Site Designer.
+Boolean property that is `true` when the block is rendered by the live store, or a preview of a theme, and `undefined` otherwise, for instance in Site Designer or when developing locally.
 
 #### `isRendering` Usage
 
