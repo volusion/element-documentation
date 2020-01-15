@@ -57,9 +57,9 @@ button: {
 ```js
 export const defaultConfig = {
     button: {
-        style: 'primary', // 'primary' || 'secondary'
-        href: '',
-        text: 'See More'
+        text: 'See More',
+        href: '/c/all-products',
+        style: 'primary' // 'primary' || 'secondary'
     }
 };
 ```
