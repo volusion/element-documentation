@@ -4,6 +4,7 @@
 
 -   Data
     -   [bool](#bool)
+    -   [button](#button)
     -   [category](#category)
     -   [color](#color)
     -   [editorFull](#editorfull)
@@ -39,6 +40,27 @@ boolean: {
 ```js
 export const defaultConfig = {
     boolean: true
+};
+```
+
+### button
+
+![button](proptype-button.png)
+
+```js
+button: {
+    label: 'Button',
+    type: ElementPropTypes.button
+}
+```
+
+```js
+export const defaultConfig = {
+    button: {
+        style: 'primary', // 'primary' || 'secondary'
+        href: '',
+        text: 'See More'
+    }
 };
 ```
 
