@@ -2,26 +2,26 @@
 
 ## Table of Contents
 
-* Data
-  * [bool](#bool)
-  * [category](#category)
-  * [color](#color)
-  * [editorFull](#editorfull)
-  * [editorMinimal](#editorminimal)
-  * [embeddable](#embeddable)
-  * [image](#image)
-  * [number](#number)
-  * [oneOf](#oneof)
-  * [product](#product)
-  * [slider](#slider)
-  * [string](#string)
-* Meta / Organization
-  * [arrayOf shape](#arrayof-shape)
-  * [isPrivate](#isPrivate)
-  * [readOnly](#readonly)
-  * [sectionHeader](#sectionheader)
-* More
-  * [Further Reading](#further-reading)
+-   Data
+    -   [bool](#bool)
+    -   [category](#category)
+    -   [color](#color)
+    -   [editorFull](#editorfull)
+    -   [editorMinimal](#editorminimal)
+    -   [embeddable](#embeddable)
+    -   [image](#image)
+    -   [number](#number)
+    -   [oneOf](#oneof)
+    -   [product](#product)
+    -   [slider](#slider)
+    -   [string](#string)
+-   Meta / Organization
+    -   [arrayOf shape](#arrayof-shape)
+    -   [isPrivate](#isPrivate)
+    -   [readOnly](#readonly)
+    -   [sectionHeader](#sectionheader)
+-   More
+    -   [Further Reading](#further-reading)
 
 ## Data
 
@@ -38,7 +38,7 @@ boolean: {
 
 ```js
 export const defaultConfig = {
-    boolean: true,
+    boolean: true
 };
 ```
 
@@ -68,7 +68,7 @@ color: {
 
 ```js
 export const defaultConfig = {
-    color: 'purple', // all CSS color formats accepted
+    color: 'purple' // all CSS color formats accepted
 };
 ```
 
@@ -192,7 +192,7 @@ number: {
 
 ```js
 export const defaultConfig = {
-    number: 42,
+    number: 42
 };
 ```
 
@@ -258,9 +258,9 @@ import { ElementPropTypes } from '@volusion/element-proptypes';
 
 export const defaultConfig = {
     sliderOptions: {
-        labelPrefix: "~",
+        labelPrefix: '~',
         labelStepSize: 10,
-        labelSuffix: " oz",
+        labelSuffix: ' oz',
         min: 50,
         max: 100,
         stepSize: 5,
@@ -283,7 +283,7 @@ string: {
 
 ```js
 export const defaultConfig = {
-    string: 'Default string',
+    string: 'Default string'
 };
 ```
 
@@ -346,7 +346,7 @@ export const defaultConfig = {
 
 ```js
 sectionHeader: {
-    type: ElementPropTypes.sectionHeader
+    type: ElementPropTypes.sectionHeader;
 }
 ```
 
@@ -360,5 +360,5 @@ export const defaultConfig = {
 
 ### Further reading
 
-* [Working with Element Proptypes Tutorial](/tutorials/proptypes/README.md)
-* [How to: Add Element Proptypes to a Block](/how-to/proptypes/README.md)
+-   [Working with Element Proptypes Tutorial](/tutorials/proptypes/README.md)
+-   [How to: Add Element Proptypes to a Block](/how-to/proptypes/README.md)
