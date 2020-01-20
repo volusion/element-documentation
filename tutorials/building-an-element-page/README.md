@@ -89,7 +89,7 @@ You should notice a browser tab open up with the url set to `http://localhost:40
 
 ![Starter Block contents in browser](/tutorials/browserStarterBlock.png)
 
-Congratulations! Your block is running locally and is ready for some changes. If this process did not start up a browser tab for your automatically, open a browser tab to `http://localhost:4000/`.
+Congratulations! Your block is running locally and is ready for some changes. If this process did not start up a browser tab for you automatically, open a browser tab to `http://localhost:4000/`.
 
 ### 4. Open the Files of the Bloglist Directory in Your Text Editor
 
