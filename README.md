@@ -52,3 +52,4 @@
 * [Volusion API ElementSdk Client Reference](references/sdk/README.md)
 * [Cart Events](references/cart-events/README.md)
 * [Element CLI](references/element-cli/README.md)
+* [Styling your block with CSS](references/styling-your-block-with-css/README.md)
