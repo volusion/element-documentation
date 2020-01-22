@@ -98,15 +98,17 @@ Use your favorite text editor or IDE to open the files of the Bloglist directory
 #### `/src/Block.js` (initial)
 
 ```js
+import React from 'react';
+
 import { defaultConfig } from './configs';
 
-export const StarterBlockFactory = React => {
-    function StarterBlock(props) {
-        return <h1>{props.text}</h1>;
-    }
-    StarterBlock.defaultProps = defaultConfig;
-    return StarterBlock;
-};
+function StarterBlock(props) {
+    return <h1>{props.text}</h1>;
+}
+
+StarterBlock.defaultProps = defaultConfig;
+
+export default StarterBlock;
 ```
 
 You're going to modify this block so that it does some new things:
@@ -144,30 +146,31 @@ Now that `getDataProps` is requesting the blog posts, you need to set up the blo
 #### `/src/Block.js`
 
 ```js
+import React from 'react';
+
 import { defaultConfig } from './configs';
 
-export const StarterBlockFactory = React => {
-    function StarterBlock(props) {
-        // the blog posts are now available as props.data
-        const { css, classes, data = [] } = props;
-        return (
-            <React.Fragment>
-                <h1>{props.text}</h1>
-                <ul>
-                    {data.map(blog => {
-                        return <li key={blog.id}>
-                            <a href={`/blog/${blog.id}`} className={css(classes.blogLink)}>
-                                {blog.title}
-                            </a>
-                        </li>;
-                    })}
-                </ul>
-            </React.Fragment>
-        );
-    }
-    StarterBlock.defaultProps = defaultConfig;
-    return StarterBlock;
-};
+function StarterBlock(props) {
+    // the blog posts are now available as props.data
+    const { css, classes, data = [] } = props;
+    return (
+        <React.Fragment>
+            <h1>{props.text}</h1>
+            <ul>
+                {data.map(blog => {
+                    return <li key={blog.id}>
+                        <a href={`/blog/${blog.id}`} className={css(classes.blogLink)}>
+                            {blog.title}
+                        </a>
+                    </li>;
+                })}
+            </ul>
+        </React.Fragment>
+    );
+}
+StarterBlock.defaultProps = defaultConfig;
+
+export default StarterBlock;
 ```
 
 In your browser, your block should now be showing the titles of blog posts from the sample API:
@@ -341,22 +344,23 @@ Open `/src/Block.js` and replace the entire source code with this:
 #### `/src/Block.js`
 
 ```js
+import React from 'react';
+
 import { defaultConfig } from './configs';
 
-export const StarterBlockFactory = React => {
-    function StarterBlock(props) {
-        const { data: blog = {} } = props;
-        return (
-            <React.Fragment>
-                <h1>{props.text}</h1>
-                <h2>{blog.title}</h2>
-                <p>{blog.body}</p>
-            </React.Fragment>
-        );
-    }
-    StarterBlock.defaultProps = defaultConfig;
-    return StarterBlock;
-};
+function StarterBlock(props) {
+    const { data: blog = {} } = props;
+    return (
+        <React.Fragment>
+            <h1>{props.text}</h1>
+            <h2>{blog.title}</h2>
+            <p>{blog.body}</p>
+        </React.Fragment>
+    );
+}
+StarterBlock.defaultProps = defaultConfig;
+
+export default StarterBlock;
 ```
 
 ### 6. Publish the Blog Details Block
