@@ -424,7 +424,12 @@ const props = {
 
 Now you'll need to update the block so that those variant options are displayed as dropdowns, and when the shopper makes a different selection the variant sent to the cart changes.
 
-In `src/Block.js`, replace just the `StarterBlock` function with this code:
+In `src/Block.js`, update the React import statement at the top of the file to include the `useState` hook:
+```js
+import React, { useState } from 'react';
+```
+
+Then, in the same file, replace just the `StarterBlock` function with this code:
 
 ```jsx
 function StarterBlock(props) {
@@ -436,10 +441,10 @@ function StarterBlock(props) {
         );
     }
 
-    const [selectedOptions, setSelectedOptions] = React.useState(
+    const [selectedOptions, setSelectedOptions] = useState(
         getInitialSelectedOptions()
     );
-    const [selectedVariant, setSelectedVariant] = React.useState(
+    const [selectedVariant, setSelectedVariant] = useState(
         getVariantFromOptions()
     );
 
