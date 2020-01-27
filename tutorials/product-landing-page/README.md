@@ -7,7 +7,7 @@ We're going to build a new block to handle the display of an individual product 
 If you have built a block before, you can skip down to [Make the Block Fetch Data from an API](#5-get-a-product-based-on-the-slug-in-the-page-path) after running this command from the directory where you keep your blocks:
 
 ```shell
-element new Productlanding --git && cd Productlanding && npm install && npm start
+element new Productlanding && cd Productlanding && npm install && npm start
 ```
 
 ## Prerequisites
@@ -52,23 +52,24 @@ Logged in as your.name@example.com.
 After your login is successful, enter this command into your terminal to create the new block:
 
 ```shell
-element new Productlanding --git
+element new Productlanding
 ```
 
 You should see output that looks like this:
 
 ```shell
-blocks $ element new Productlanding --git
+blocks $ element new Productlanding
 Cloning boilerplate for Productlanding...
 Saved boilerplate to ./Productlanding; now updating...
 Updated files Productlanding/local/index.js!
-Initalized git repo.
 ```
 
 At this point, a new directory was created called `Productlanding`. Enter this command in your terminal to navigate into the Productlanding directory:
 
 ```shell
 cd Productlanding
+git init
+git commit -am "Initial commit"
 ```
 
 Type this command into your terminal to install the npm packages that your block needs:
@@ -231,6 +232,8 @@ Next, you need to publish the block to the Block Theme Registry. Run this comman
 
 ```shell
 element publish -n "Product Landing Tutorial Block"
+git commit -am "First release"
+git tag 1.0
 ```
 
 This will present you with a category selection menu that looks like this:
