@@ -152,14 +152,14 @@ import { defaultConfig } from './configs';
 
 function StarterBlock(props) {
     // the blog posts are now available as props.data
-    const { css, classes, data = [] } = props;
+    const { css, data = [] } = props;
     return (
         <React.Fragment>
             <h1>{props.text}</h1>
             <ul>
                 {data.map(blog => {
                     return <li key={blog.id}>
-                        <a href={`/blog/${blog.id}`} className={css(classes.blogLink)}>
+                        <a href={`/blog/${blog.id}`}>
                             {blog.title}
                         </a>
                     </li>;
@@ -205,7 +205,46 @@ export const getStyles = (globalStyles, blockConfig) => ({
 });
 ```
 
-Blocks use [Aphrodite](https://github.com/Khan/aphrodite) for CSS-in-JS.
+Blocks use [Aphrodite](https://github.com/Khan/aphrodite) for CSS-in-JS. Aphrodite is already included in the Starter Block. Import it, and add the new style to your block:
+
+#### `src/Block.js`
+
+```js
+import React from 'react';
+import { StyleSheet, css } from 'aphrodite';
+
+import { defaultConfig } from './configs';
+import { getStyles } from './getStyles';
+
+
+function StarterBlock(props) {
+    // the blog posts are now available as props.data
+    const { css, data = [] } = props;
+
+    // Pass the style object returned by `getStyles()` to aphrodite's `StyleSheet.create()`.
+    const styles = StyleSheet.create(getStyles({}, props));
+
+    return (
+        <React.Fragment>
+            <h1>{props.text}</h1>
+            <ul>
+                {data.map(blog => {
+                    return <li key={blog.id}>
+                        {/* add the aphrodite class to your rendered HTML. */}
+                        <a href={`/blog/${blog.id}`}  className={css(styles.blogLink)}>
+                            {blog.title}
+                        </a>
+                    </li>;
+                })}
+            </ul>
+        </React.Fragment>
+    );
+}
+StarterBlock.defaultProps = defaultConfig;
+
+export default StarterBlock;
+```
+
 
 Your block should now look something like this and have a hover effect for the blog links:
 
