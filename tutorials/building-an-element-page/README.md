@@ -7,7 +7,10 @@ This tutorial will cover creating new pages in Element, and the creation of cust
 If you have built a block before, you can skip down to [Make the Block Fetch Data from an API](#5-make-the-block-fetch-data-from-an-api) after running this command from the directory where you keep your blocks:
 
 ```shell
-element new Bloglist --git && cd Bloglist && npm install && npm start
+element new Bloglist && cd Bloglist && npm install && npm start
+cd BlogList
+git init
+git commit -am "Initial commit"
 ```
 
 ## Prerequisites
@@ -52,7 +55,7 @@ Logged in as your.name@example.com.
 After your login is successful, enter this command into your terminal to create the new block:
 
 ```shell
-element new Bloglist --git
+element new Bloglist
 ```
 
 You should see output that looks like this:
@@ -62,13 +65,14 @@ blocks $ element new Bloglist --git
 Cloning boilerplate for Bloglist...
 Saved boilerplate to ./Bloglist; now updating...
 Updated files Bloglist/local/index.js!
-Initalized git repo.
 ```
 
 At this point, a new directory was created called `Bloglist`. Enter this command in your terminal to navigate into the Bloglist directory:
 
 ```shell
 cd Bloglist
+git init
+git commit -am "Initial commit"
 ```
 
 Type this command into your terminal to install the npm packages that your block needs:
@@ -270,6 +274,8 @@ Next, you need to publish the block to the Block Theme Registry. Run this comman
 
 ```shell
 element publish -n "Blog List Tutorial Block"
+git commit -am "First release"
+git tag 1.0
 ```
 
 This will present you with a category selection menu that looks like this:
@@ -295,7 +301,7 @@ cd ..
 Type this command into your terminal to make the new BlogDetails block:
 
 ```shell
-element new Blogdetails --git
+element new Blogdetails
 ```
 
 Like the blog list block before, you should see output that tells you the operation was successful.
@@ -304,6 +310,8 @@ At this point, a new directory was created called `Blogdetails`. Enter this comm
 
 ```shell
 cd Blogdetails
+git init
+git commit -am "Initial commit"
 ```
 
 Type this command into your terminal to install the npm packages that your block needs:
@@ -420,6 +428,8 @@ Next, you need to publish the block to the Block Theme Registry. Run this comman
 
 ```shell
 element publish -n "Blog Details Tutorial Block"
+git commit -am "First release"
+git tag 1.0
 ```
 
 This will present you with a category selection menu that looks like this:
