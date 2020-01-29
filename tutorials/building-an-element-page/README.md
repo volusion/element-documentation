@@ -221,10 +221,8 @@ function StarterBlock(props) {
     // the blog posts are now available as props.data
     const { css, data = [] } = props;
 
-    // call getStyles() to get your style object.
-    const styles = getStyles();
-    // Pass the style object to aphrodite's `StyleSheet.create()`.
-    const stylesheet = StyleSheet.create(styles)
+    // Pass the style object returned by `getStyles()` to aphrodite's `StyleSheet.create()`.
+    const styles = StyleSheet.create(getStyles({}, props));
 
     return (
         <React.Fragment>
@@ -233,7 +231,7 @@ function StarterBlock(props) {
                 {data.map(blog => {
                     return <li key={blog.id}>
                         {/* add the aphrodite class to your rendered HTML. */}
-                        <a href={`/blog/${blog.id}`}  className={css(stylesheet.blogLink)}>
+                        <a href={`/blog/${blog.id}`}  className={css(styles.blogLink)}>
                             {blog.title}
                         </a>
                     </li>;
